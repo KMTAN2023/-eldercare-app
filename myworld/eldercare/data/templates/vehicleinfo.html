@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic Form</title>
+</head>
+<body>
+  <h2>Add Vehicle</h2>
+  <form method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Submit</button>
+  </form>
+  <p><a href="../elderinfo">Elder</a> | <a href="../vehicleinfo">Vehicle</a> | <a href="../centreinfo">Centre</a></p>
+  <p><a href="../">Home</a></p>
+</body>
+</html>

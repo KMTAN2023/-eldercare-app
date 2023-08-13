@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Export</title>
+</head>
+<body>
+    <h1>Data Export</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="excel_file" accept=".xlsx" required>
+        <button type="submit">Upload</button>
+    </form>
+    
+    <div>
+        {% if excel_data %}
+        <h2>Uploaded Excel Data</h2>
+        <table border="1">
+            {% for row in excel_data %}
+            <tr>
+                {% for cell in row %}
+                <td>{{ cell }}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+        {% endif %}
+    </div>
+</body>
+</html>

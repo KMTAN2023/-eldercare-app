@@ -1,0 +1,271 @@
+2023-07-24 17:28:00,324 : WARN  : ModalContext :  : Node : Excel Reader : 0:1 : The node configuration changed and the table spec will be recalculated during execution.
+2023-07-24 17:28:08,581 : WARN  : KNIME-Worker-2-Excel Reader 0:1 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 17:28:08,581 : WARN  : KNIME-Worker-2-Excel Reader 0:1 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 17:28:08,716 : WARN  : KNIME-Worker-1-Number To String 0:21:14 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 17:28:08,717 : WARN  : KNIME-Worker-1-Number To String 0:21:14 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 17:28:08,767 : WARN  : KNIME-Worker-0-String Manipulation 0:21:19 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 17:28:08,768 : WARN  : KNIME-Worker-0-String Manipulation 0:21:19 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 17:28:08,790 : WARN  : KNIME-Worker-1-Rank 0:21:21 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 17:28:08,790 : WARN  : KNIME-Worker-1-Rank 0:21:21 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 17:28:08,800 : WARN  : KNIME-Worker-2-Double To Int 0:21:24 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 17:28:08,800 : WARN  : KNIME-Worker-2-Double To Int 0:21:24 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 17:28:08,808 : WARN  : KNIME-Worker-1-Java Snippet 0:21:22 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 17:28:08,808 : WARN  : KNIME-Worker-1-Java Snippet 0:21:22 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 17:28:08,819 : WARN  : KNIME-Worker-1-Rank 0:27:11 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 17:28:08,819 : WARN  : KNIME-Worker-1-Rank 0:27:11 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 17:28:08,826 : WARN  : KNIME-Worker-0-Rank 0:27:26 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 17:28:08,826 : WARN  : KNIME-Worker-0-Rank 0:27:26 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 17:28:30,313 : WARN  : main :  : Node : Excel Reader : 0:1 : The node configuration changed and the table spec will be recalculated during execution.
+2023-07-24 17:41:10,773 : WARN  : ModalContext :  : Node : Excel Reader : 0:1 : The node configuration changed and the table spec will be recalculated during execution.
+2023-07-24 17:42:16,124 : WARN  : main :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 17:42:16,125 : WARN  : main :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 17:42:27,629 : WARN  : main :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 17:42:27,629 : WARN  : main :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 17:42:32,075 : ERROR : SwingWorker-pool-9-thread-2 :  : StatusSwingWorker : CSV Writer : 0:8 : Error while updating status message: Illegal char <:> at index 58: C:\OR_Project\OptiRoute\Data\data_model\01_DataPrep\data\C:\OR_Project\OptiRoute\Data\\centre_p.csv
+java.nio.file.InvalidPathException: Illegal char <:> at index 58: C:\OR_Project\OptiRoute\Data\data_model\01_DataPrep\data\C:\OR_Project\OptiRoute\Data\\centre_p.csv
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at java.base/java.nio.file.Path.of(Unknown Source)
+	at java.base/java.nio.file.Paths.get(Unknown Source)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystem.toLocalPath(LocalWorkflowAwareFileSystem.java:192)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystem.existsWithAccessibilityCheck(LocalWorkflowAwareFileSystem.java:324)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystemProvider.exists(LocalWorkflowAwareFileSystemProvider.java:139)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystemProvider.exists(LocalWorkflowAwareFileSystemProvider.java:1)
+	at org.knime.filehandling.core.connections.base.BaseFileSystemProvider.existsCached(BaseFileSystemProvider.java:656)
+	at org.knime.filehandling.core.connections.base.BaseFileSystemProvider.readAttributes(BaseFileSystemProvider.java:733)
+	at java.base/java.nio.file.Files.readAttributes(Unknown Source)
+	at org.knime.filehandling.core.connections.FSFiles.exists(FSFiles.java:299)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.writer.DefaultWriterStatusMessageReporter.report(DefaultWriterStatusMessageReporter.java:123)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:107)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:1)
+	at org.knime.core.util.SwingWorkerWithContext.doInBackground(SwingWorkerWithContext.java:106)
+	at java.desktop/javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2023-07-24 17:42:33,612 : ERROR : SwingWorker-pool-9-thread-1 :  : StatusSwingWorker : CSV Writer : 0:8 : Error while updating status message: Illegal char <:> at index 58: C:\OR_Project\OptiRoute\Data\data_model\01_DataPrep\data\C:\OR_Project\OptiRoute\Data\centre_p.csv
+java.nio.file.InvalidPathException: Illegal char <:> at index 58: C:\OR_Project\OptiRoute\Data\data_model\01_DataPrep\data\C:\OR_Project\OptiRoute\Data\centre_p.csv
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at java.base/java.nio.file.Path.of(Unknown Source)
+	at java.base/java.nio.file.Paths.get(Unknown Source)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystem.toLocalPath(LocalWorkflowAwareFileSystem.java:192)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystem.existsWithAccessibilityCheck(LocalWorkflowAwareFileSystem.java:324)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystemProvider.exists(LocalWorkflowAwareFileSystemProvider.java:139)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystemProvider.exists(LocalWorkflowAwareFileSystemProvider.java:1)
+	at org.knime.filehandling.core.connections.base.BaseFileSystemProvider.existsCached(BaseFileSystemProvider.java:656)
+	at org.knime.filehandling.core.connections.base.BaseFileSystemProvider.readAttributes(BaseFileSystemProvider.java:733)
+	at java.base/java.nio.file.Files.readAttributes(Unknown Source)
+	at org.knime.filehandling.core.connections.FSFiles.exists(FSFiles.java:299)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.writer.DefaultWriterStatusMessageReporter.report(DefaultWriterStatusMessageReporter.java:123)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:107)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:1)
+	at org.knime.core.util.SwingWorkerWithContext.doInBackground(SwingWorkerWithContext.java:106)
+	at java.desktop/javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2023-07-24 17:42:51,132 : ERROR : SwingWorker-pool-9-thread-3 :  : StatusSwingWorker : CSV Writer : 0:31 : Error while updating status message: Illegal char <:> at index 58: C:\OR_Project\OptiRoute\Data\data_model\01_DataPrep\data\C:\OR_Project\OptiRoute\Data\\client_request.csv
+java.nio.file.InvalidPathException: Illegal char <:> at index 58: C:\OR_Project\OptiRoute\Data\data_model\01_DataPrep\data\C:\OR_Project\OptiRoute\Data\\client_request.csv
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at java.base/java.nio.file.Path.of(Unknown Source)
+	at java.base/java.nio.file.Paths.get(Unknown Source)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystem.toLocalPath(LocalWorkflowAwareFileSystem.java:192)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystem.existsWithAccessibilityCheck(LocalWorkflowAwareFileSystem.java:324)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystemProvider.exists(LocalWorkflowAwareFileSystemProvider.java:139)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystemProvider.exists(LocalWorkflowAwareFileSystemProvider.java:1)
+	at org.knime.filehandling.core.connections.base.BaseFileSystemProvider.existsCached(BaseFileSystemProvider.java:656)
+	at org.knime.filehandling.core.connections.base.BaseFileSystemProvider.readAttributes(BaseFileSystemProvider.java:733)
+	at java.base/java.nio.file.Files.readAttributes(Unknown Source)
+	at org.knime.filehandling.core.connections.FSFiles.exists(FSFiles.java:299)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.writer.DefaultWriterStatusMessageReporter.report(DefaultWriterStatusMessageReporter.java:123)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:107)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:1)
+	at org.knime.core.util.SwingWorkerWithContext.doInBackground(SwingWorkerWithContext.java:106)
+	at java.desktop/javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2023-07-24 17:42:52,063 : ERROR : SwingWorker-pool-9-thread-4 :  : StatusSwingWorker : CSV Writer : 0:31 : Error while updating status message: Illegal char <:> at index 58: C:\OR_Project\OptiRoute\Data\data_model\01_DataPrep\data\C:\OR_Project\OptiRoute\Data\client_request.csv
+java.nio.file.InvalidPathException: Illegal char <:> at index 58: C:\OR_Project\OptiRoute\Data\data_model\01_DataPrep\data\C:\OR_Project\OptiRoute\Data\client_request.csv
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at java.base/java.nio.file.Path.of(Unknown Source)
+	at java.base/java.nio.file.Paths.get(Unknown Source)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystem.toLocalPath(LocalWorkflowAwareFileSystem.java:192)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystem.existsWithAccessibilityCheck(LocalWorkflowAwareFileSystem.java:324)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystemProvider.exists(LocalWorkflowAwareFileSystemProvider.java:139)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystemProvider.exists(LocalWorkflowAwareFileSystemProvider.java:1)
+	at org.knime.filehandling.core.connections.base.BaseFileSystemProvider.existsCached(BaseFileSystemProvider.java:656)
+	at org.knime.filehandling.core.connections.base.BaseFileSystemProvider.readAttributes(BaseFileSystemProvider.java:733)
+	at java.base/java.nio.file.Files.readAttributes(Unknown Source)
+	at org.knime.filehandling.core.connections.FSFiles.exists(FSFiles.java:299)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.writer.DefaultWriterStatusMessageReporter.report(DefaultWriterStatusMessageReporter.java:123)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:107)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:1)
+	at org.knime.core.util.SwingWorkerWithContext.doInBackground(SwingWorkerWithContext.java:106)
+	at java.desktop/javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2023-07-24 17:43:19,516 : ERROR : AWT-EventQueue-0 :  : ExcelTableWriterNodeDialog : Excel Writer : 3:62 : Could not get sheet names!
+java.nio.file.InvalidPathException: Illegal char <:> at index 66: C:\OR_Project\OptiRoute\Data\data_model\02_output_transform\data\C:\OR_Project\OptiRoute\Data\\Optimized Data.xlsx
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at java.base/java.nio.file.Path.of(Unknown Source)
+	at java.base/java.nio.file.Paths.get(Unknown Source)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystem.toLocalPath(LocalWorkflowAwareFileSystem.java:192)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystem.existsWithAccessibilityCheck(LocalWorkflowAwareFileSystem.java:324)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystemProvider.exists(LocalWorkflowAwareFileSystemProvider.java:139)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystemProvider.exists(LocalWorkflowAwareFileSystemProvider.java:1)
+	at org.knime.filehandling.core.connections.base.BaseFileSystemProvider.existsCached(BaseFileSystemProvider.java:656)
+	at org.knime.filehandling.core.connections.base.BaseFileSystemProvider.checkAccess(BaseFileSystemProvider.java:792)
+	at java.base/java.nio.file.Files.exists(Unknown Source)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.ExcelTableWriterNodeDialog$SheetUpdater.doInBackgroundWithContext(ExcelTableWriterNodeDialog.java:503)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.ExcelTableWriterNodeDialog$SheetUpdater.doInBackgroundWithContext(ExcelTableWriterNodeDialog.java:1)
+	at org.knime.core.util.SwingWorkerWithContext.doInBackground(SwingWorkerWithContext.java:106)
+	at java.desktop/javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2023-07-24 17:43:19,684 : ERROR : SwingWorker-pool-9-thread-8 :  : StatusSwingWorker : Excel Writer : 3:62 : Error while updating status message: Illegal char <:> at index 66: C:\OR_Project\OptiRoute\Data\data_model\02_output_transform\data\C:\OR_Project\OptiRoute\Data\\Optimized Data.xlsx
+java.nio.file.InvalidPathException: Illegal char <:> at index 66: C:\OR_Project\OptiRoute\Data\data_model\02_output_transform\data\C:\OR_Project\OptiRoute\Data\\Optimized Data.xlsx
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at java.base/java.nio.file.Path.of(Unknown Source)
+	at java.base/java.nio.file.Paths.get(Unknown Source)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystem.toLocalPath(LocalWorkflowAwareFileSystem.java:192)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystem.existsWithAccessibilityCheck(LocalWorkflowAwareFileSystem.java:324)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystemProvider.exists(LocalWorkflowAwareFileSystemProvider.java:139)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystemProvider.exists(LocalWorkflowAwareFileSystemProvider.java:1)
+	at org.knime.filehandling.core.connections.base.BaseFileSystemProvider.existsCached(BaseFileSystemProvider.java:656)
+	at org.knime.filehandling.core.connections.base.BaseFileSystemProvider.readAttributes(BaseFileSystemProvider.java:733)
+	at java.base/java.nio.file.Files.readAttributes(Unknown Source)
+	at org.knime.filehandling.core.connections.FSFiles.exists(FSFiles.java:299)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.writer.DefaultWriterStatusMessageReporter.report(DefaultWriterStatusMessageReporter.java:123)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:107)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:1)
+	at org.knime.core.util.SwingWorkerWithContext.doInBackground(SwingWorkerWithContext.java:106)
+	at java.desktop/javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2023-07-24 17:43:21,890 : ERROR : AWT-EventQueue-0 :  : ExcelTableWriterNodeDialog : Excel Writer : 3:62 : Could not get sheet names!
+java.nio.file.InvalidPathException: Illegal char <:> at index 66: C:\OR_Project\OptiRoute\Data\data_model\02_output_transform\data\C:\OR_Project\OptiRoute\Data\Optimized Data.xlsx
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at java.base/java.nio.file.Path.of(Unknown Source)
+	at java.base/java.nio.file.Paths.get(Unknown Source)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystem.toLocalPath(LocalWorkflowAwareFileSystem.java:192)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystem.existsWithAccessibilityCheck(LocalWorkflowAwareFileSystem.java:324)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystemProvider.exists(LocalWorkflowAwareFileSystemProvider.java:139)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystemProvider.exists(LocalWorkflowAwareFileSystemProvider.java:1)
+	at org.knime.filehandling.core.connections.base.BaseFileSystemProvider.existsCached(BaseFileSystemProvider.java:656)
+	at org.knime.filehandling.core.connections.base.BaseFileSystemProvider.checkAccess(BaseFileSystemProvider.java:792)
+	at java.base/java.nio.file.Files.exists(Unknown Source)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.ExcelTableWriterNodeDialog$SheetUpdater.doInBackgroundWithContext(ExcelTableWriterNodeDialog.java:503)
+	at org.knime.ext.poi3.node.io.filehandling.excel.writer.ExcelTableWriterNodeDialog$SheetUpdater.doInBackgroundWithContext(ExcelTableWriterNodeDialog.java:1)
+	at org.knime.core.util.SwingWorkerWithContext.doInBackground(SwingWorkerWithContext.java:106)
+	at java.desktop/javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2023-07-24 17:43:22,055 : ERROR : SwingWorker-pool-9-thread-7 :  : StatusSwingWorker : Excel Writer : 3:62 : Error while updating status message: Illegal char <:> at index 66: C:\OR_Project\OptiRoute\Data\data_model\02_output_transform\data\C:\OR_Project\OptiRoute\Data\Optimized Data.xlsx
+java.nio.file.InvalidPathException: Illegal char <:> at index 66: C:\OR_Project\OptiRoute\Data\data_model\02_output_transform\data\C:\OR_Project\OptiRoute\Data\Optimized Data.xlsx
+	at java.base/sun.nio.fs.WindowsPathParser.normalize(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsPath.parse(Unknown Source)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(Unknown Source)
+	at java.base/java.nio.file.Path.of(Unknown Source)
+	at java.base/java.nio.file.Paths.get(Unknown Source)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystem.toLocalPath(LocalWorkflowAwareFileSystem.java:192)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystem.existsWithAccessibilityCheck(LocalWorkflowAwareFileSystem.java:324)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystemProvider.exists(LocalWorkflowAwareFileSystemProvider.java:139)
+	at org.knime.filehandling.core.fs.knime.local.workflowaware.LocalWorkflowAwareFileSystemProvider.exists(LocalWorkflowAwareFileSystemProvider.java:1)
+	at org.knime.filehandling.core.connections.base.BaseFileSystemProvider.existsCached(BaseFileSystemProvider.java:656)
+	at org.knime.filehandling.core.connections.base.BaseFileSystemProvider.readAttributes(BaseFileSystemProvider.java:733)
+	at java.base/java.nio.file.Files.readAttributes(Unknown Source)
+	at org.knime.filehandling.core.connections.FSFiles.exists(FSFiles.java:299)
+	at org.knime.filehandling.core.defaultnodesettings.filechooser.writer.DefaultWriterStatusMessageReporter.report(DefaultWriterStatusMessageReporter.java:123)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:107)
+	at org.knime.filehandling.core.defaultnodesettings.status.StatusSwingWorker.doInBackgroundWithContext(StatusSwingWorker.java:1)
+	at org.knime.core.util.SwingWorkerWithContext.doInBackground(SwingWorkerWithContext.java:106)
+	at java.desktop/javax.swing.SwingWorker$1.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.desktop/javax.swing.SwingWorker.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2023-07-24 20:05:25,498 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : PowerShell command powershell -inputformat none -outputformat text -NonInteractive -Command Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows Defender\Exclusions\Processes' -ErrorAction Stop | Select-Object -ExpandProperty Property did not terminate successfully.
+2023-07-24 20:05:25,498 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Stderr is:
+2023-07-24 20:05:25,498 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : Get-Item : Requested registry access is not allowed.
+2023-07-24 20:05:25,498 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : At line:1 char:1
+2023-07-24 20:05:25,498 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + Get-Item -Path 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windo ...
+2023-07-24 20:05:25,498 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  : + ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-07-24 20:05:25,498 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + CategoryInfo          : PermissionDenied: (HKEY_LOCAL_MACH...sions\Processes:String) [Get-Item], SecurityExcepti 
+2023-07-24 20:05:25,498 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :    on
+2023-07-24 20:05:25,498 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :     + FullyQualifiedErrorId : System.Security.SecurityException,Microsoft.PowerShell.Commands.GetItemCommand
+2023-07-24 20:05:25,498 : ERROR : main :  : WindowsDefenderExceptionHandler :  :  :  
+2023-07-24 20:05:50,117 : WARN  : ModalContext :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 20:05:50,133 : WARN  : ModalContext :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 20:05:59,749 : WARN  : KNIME-Worker-0-Excel Reader 0:1 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 20:05:59,750 : WARN  : KNIME-Worker-0-Excel Reader 0:1 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 20:05:59,783 : WARN  : KNIME-Worker-1-Math Formula 0:21:13 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 20:05:59,783 : WARN  : KNIME-Worker-1-Math Formula 0:21:13 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 20:05:59,804 : WARN  : KNIME-Worker-2-Number To String 0:21:14 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 20:05:59,805 : WARN  : KNIME-Worker-2-Number To String 0:21:14 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 20:05:59,843 : WARN  : KNIME-Worker-1-String Manipulation 0:21:19 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 20:05:59,843 : WARN  : KNIME-Worker-1-String Manipulation 0:21:19 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 20:05:59,862 : WARN  : KNIME-Worker-2-Rank 0:21:21 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 20:05:59,862 : WARN  : KNIME-Worker-2-Rank 0:21:21 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 20:05:59,871 : WARN  : KNIME-Worker-0-Double To Int 0:21:24 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 20:05:59,871 : WARN  : KNIME-Worker-0-Double To Int 0:21:24 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 20:05:59,878 : WARN  : KNIME-Worker-2-Java Snippet 0:21:22 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 20:05:59,878 : WARN  : KNIME-Worker-2-Java Snippet 0:21:22 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 20:05:59,886 : WARN  : KNIME-Worker-2-Rank 0:27:11 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 20:05:59,886 : WARN  : KNIME-Worker-2-Rank 0:27:11 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 20:05:59,891 : WARN  : KNIME-Worker-1-Rank 0:27:26 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 20:05:59,891 : WARN  : KNIME-Worker-1-Rank 0:27:26 :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 20:06:06,484 : WARN  : main :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 20:06:06,484 : WARN  : main :  : Node : GroupBy : 0:2 : No aggregation column defined
+2023-07-24 20:06:18,819 : WARN  : KNIME-Worker-3-Missing Value 3:53:51 :  : Node : Missing Value : 3:53:51 : Column "client_postal_code_pre" still contains missing values.
+Column "client_postal_code_next" still contains missing values.
+Column "SRC_POSTAL_CODE" still contains missing values.
+Column "DES_POSTAL_CODE" still contains missing values.

@@ -1,0 +1,179 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.1": {
+      "OptiRoute/1.0.0": {
+        "dependencies": {
+          "Google.OrTools": "9.0.9048",
+          "LumenWorksCsvReader": "4.0.0",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "OptiRoute.dll": {}
+        }
+      },
+      "Google.OrTools/9.0.9048": {
+        "dependencies": {
+          "Google.OrTools.runtime.linux-x64": "9.0.9048",
+          "Google.OrTools.runtime.osx-x64": "9.0.9048",
+          "Google.OrTools.runtime.win-x64": "9.0.9048",
+          "Google.Protobuf": "3.15.8"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.OrTools.dll": {
+            "assemblyVersion": "9.0.9048.0",
+            "fileVersion": "9.0.9048.0"
+          }
+        }
+      },
+      "Google.OrTools.runtime.linux-x64/9.0.9048": {
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/google-ortools-native.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/libortools.so": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Google.OrTools.runtime.osx-x64/9.0.9048": {
+        "runtimeTargets": {
+          "runtimes/osx-x64/native/google-ortools-native.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/libortools.dylib": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Google.OrTools.runtime.win-x64/9.0.9048": {
+        "runtimeTargets": {
+          "runtimes/win-x64/native/google-ortools-native.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "Google.Protobuf/3.15.8": {
+        "dependencies": {
+          "System.Memory": "4.5.3",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Google.Protobuf.dll": {
+            "assemblyVersion": "3.15.8.0",
+            "fileVersion": "3.15.8.0"
+          }
+        }
+      },
+      "LumenWorksCsvReader/4.0.0": {
+        "runtime": {
+          "lib/netstandard2.0/LumenWorks.Framework.IO.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.25517"
+          }
+        }
+      },
+      "System.Memory/4.5.3": {},
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+        "runtime": {
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "assemblyVersion": "4.0.4.1",
+            "fileVersion": "4.6.26919.2"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OptiRoute/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Google.OrTools/9.0.9048": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Bs/X/FPndLXIseLHazm+upQnY9BupVx5nUyOBVFJU5LihEWWzhX0x3mMUxO2lwr7OUn99YFq1BMFrm3SQ6FiWQ==",
+      "path": "google.ortools/9.0.9048",
+      "hashPath": "google.ortools.9.0.9048.nupkg.sha512"
+    },
+    "Google.OrTools.runtime.linux-x64/9.0.9048": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-f7EhJOg0YWuRjUQT2TjZzU5Wuf1igKqIpkdKxfqWiTtB84VR46hX+YTskRP22vxoTI70pzXozJVC/EiSzTz8Xw==",
+      "path": "google.ortools.runtime.linux-x64/9.0.9048",
+      "hashPath": "google.ortools.runtime.linux-x64.9.0.9048.nupkg.sha512"
+    },
+    "Google.OrTools.runtime.osx-x64/9.0.9048": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KLFL4aUzYItxofulS2fehBbk5XvUohPIZ83hVeg/wQa3I398FM/rYr1nSpOWQqFKAF5k/jUuyHe0Nus+mPfgmQ==",
+      "path": "google.ortools.runtime.osx-x64/9.0.9048",
+      "hashPath": "google.ortools.runtime.osx-x64.9.0.9048.nupkg.sha512"
+    },
+    "Google.OrTools.runtime.win-x64/9.0.9048": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-L2agJXe8mqGmUdakOsGXcASgElwOUzokTAaxvOa7E6zbIBDyMnXZgNJ20YmqeGUrAL+BZQ1MmT1yrl8OdPe3PA==",
+      "path": "google.ortools.runtime.win-x64/9.0.9048",
+      "hashPath": "google.ortools.runtime.win-x64.9.0.9048.nupkg.sha512"
+    },
+    "Google.Protobuf/3.15.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tA0S9QXJq+r3CjwBlcn5glEUrbdAxhPWO4yhq5+ycn6WW6+nsvqzO6Qf6NE9XWbEz/F2QSpBTxjdTI7SvVy7CQ==",
+      "path": "google.protobuf/3.15.8",
+      "hashPath": "google.protobuf.3.15.8.nupkg.sha512"
+    },
+    "LumenWorksCsvReader/4.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CP6bPmDbmV5yT7YwfGxN8Agrdj0nB82b2UitfrnTghqyfF4DXD4UXl8MoCXBz4Ja17bUYqpEDd+qaavh7lwUxg==",
+      "path": "lumenworkscsvreader/4.0.0",
+      "hashPath": "lumenworkscsvreader.4.0.0.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "path": "newtonsoft.json/13.0.1",
+      "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
+    },
+    "System.Memory/4.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+      "path": "system.memory/4.5.3",
+      "hashPath": "system.memory.4.5.3.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wprSFgext8cwqymChhrBLu62LMg/1u92bU+VOwyfBimSPVFXtsNqEWC92Pf9ofzJFlk4IHmJA75EDJn1b2goAQ==",
+      "path": "system.runtime.compilerservices.unsafe/4.5.2",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512"
+    }
+  }
+}

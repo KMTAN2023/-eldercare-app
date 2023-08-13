@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+    <entry key="node_file" type="xstring" value="settings.xml"/>
+    <config key="flow_stack"/>
+    <config key="internal_node_subsettings">
+        <entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+    </config>
+    <config key="model">
+        <entry key="scriptImports" type="xstring" value="// Your custom imports:%%00010"/>
+        <entry key="scriptFields" type="xstring" value="// Your custom variables:%%00010"/>
+        <entry key="scriptBody" type="xstring" value="// Enter your code here:%%00010%%00010%%00009%%00009%%00010out_Trip_Start_Time = &quot;&quot;;%%00010out_Trip_End_Time = &quot;&quot;;%%00010out_vehicle_plate = &quot;&quot;;%%00010out_nric_fin = &quot;&quot;;%%00010out_FromToPostal = &quot;&quot;;%%00010out_PickupTime_Format = &quot;&quot;;%%00010out_IHOS = &quot;&quot;;%%00010out_PickupTimeDelivery = &quot;&quot;;%%00010%%00010%%00010%%00010%%00010%%00010%%00010"/>
+        <config key="jarFiles">
+            <entry key="array-size" type="xint" value="0"/>
+        </config>
+        <config key="outCols">
+            <entry key="array-size" type="xint" value="8"/>
+            <config key="0">
+                <entry key="Name" type="xstring" value="Trip_Start_Time"/>
+                <entry key="JavaName" type="xstring" value="out_Trip_Start_Time"/>
+                <entry key="JavaType" type="xstring" value="java.lang.String"/>
+                <config key="Type">
+                    <entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <entry key="is_null" type="xboolean" value="false"/>
+                </config>
+                <entry key="ConverterFactory" type="xstring" value="org.knime.core.data.def.StringCell$StringCellFactory.createCell(class java.lang.String)"/>
+                <entry key="replaceExisting" type="xboolean" value="false"/>
+            </config>
+            <config key="1">
+                <entry key="Name" type="xstring" value="Trip_End_Time"/>
+                <entry key="JavaName" type="xstring" value="out_Trip_End_Time"/>
+                <entry key="JavaType" type="xstring" value="java.lang.String"/>
+                <config key="Type">
+                    <entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <entry key="is_null" type="xboolean" value="false"/>
+                </config>
+                <entry key="ConverterFactory" type="xstring" value="org.knime.core.data.def.StringCell$StringCellFactory.createCell(class java.lang.String)"/>
+                <entry key="replaceExisting" type="xboolean" value="false"/>
+            </config>
+            <config key="2">
+                <entry key="Name" type="xstring" value="vehicle_plate"/>
+                <entry key="JavaName" type="xstring" value="out_vehicle_plate"/>
+                <entry key="JavaType" type="xstring" value="java.lang.String"/>
+                <config key="Type">
+                    <entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <entry key="is_null" type="xboolean" value="false"/>
+                </config>
+                <entry key="ConverterFactory" type="xstring" value="org.knime.core.data.def.StringCell$StringCellFactory.createCell(class java.lang.String)"/>
+                <entry key="replaceExisting" type="xboolean" value="false"/>
+            </config>
+            <config key="3">
+                <entry key="Name" type="xstring" value="nric_fin"/>
+                <entry key="JavaName" type="xstring" value="out_nric_fin"/>
+                <entry key="JavaType" type="xstring" value="java.lang.String"/>
+                <config key="Type">
+                    <entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <entry key="is_null" type="xboolean" value="false"/>
+                </config>
+                <entry key="ConverterFactory" type="xstring" value="org.knime.core.data.def.StringCell$StringCellFactory.createCell(class java.lang.String)"/>
+                <entry key="replaceExisting" type="xboolean" value="false"/>
+            </config>
+            <config key="4">
+                <entry key="Name" type="xstring" value="FromToPostal"/>
+                <entry key="JavaName" type="xstring" value="out_FromToPostal"/>
+                <entry key="JavaType" type="xstring" value="java.lang.String"/>
+                <config key="Type">
+                    <entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <entry key="is_null" type="xboolean" value="false"/>
+                </config>
+                <entry key="ConverterFactory" type="xstring" value="org.knime.core.data.def.StringCell$StringCellFactory.createCell(class java.lang.String)"/>
+                <entry key="replaceExisting" type="xboolean" value="false"/>
+            </config>
+            <config key="5">
+                <entry key="Name" type="xstring" value="Pick up Time_Format"/>
+                <entry key="JavaName" type="xstring" value="out_PickupTime_Format"/>
+                <entry key="JavaType" type="xstring" value="java.lang.String"/>
+                <config key="Type">
+                    <entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <entry key="is_null" type="xboolean" value="false"/>
+                </config>
+                <entry key="ConverterFactory" type="xstring" value="org.knime.core.data.def.StringCell$StringCellFactory.createCell(class java.lang.String)"/>
+                <entry key="replaceExisting" type="xboolean" value="false"/>
+            </config>
+            <config key="6">
+                <entry key="Name" type="xstring" value="IH/OS"/>
+                <entry key="JavaName" type="xstring" value="out_IHOS"/>
+                <entry key="JavaType" type="xstring" value="java.lang.String"/>
+                <config key="Type">
+                    <entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <entry key="is_null" type="xboolean" value="false"/>
+                </config>
+                <entry key="ConverterFactory" type="xstring" value="org.knime.core.data.def.StringCell$StringCellFactory.createCell(class java.lang.String)"/>
+                <entry key="replaceExisting" type="xboolean" value="false"/>
+            </config>
+            <config key="7">
+                <entry key="Name" type="xstring" value="Pick up Time/Delivery"/>
+                <entry key="JavaName" type="xstring" value="out_PickupTimeDelivery"/>
+                <entry key="JavaType" type="xstring" value="java.lang.String"/>
+                <config key="Type">
+                    <entry key="cell_class" type="xstring" value="org.knime.core.data.def.StringCell"/>
+                    <entry key="is_null" type="xboolean" value="false"/>
+                </config>
+                <entry key="ConverterFactory" type="xstring" value="org.knime.core.data.def.StringCell$StringCellFactory.createCell(class java.lang.String)"/>
+                <entry key="replaceExisting" type="xboolean" value="false"/>
+            </config>
+        </config>
+        <config key="outVars">
+            <entry key="array-size" type="xint" value="0"/>
+        </config>
+        <config key="inCols">
+            <entry key="array-size" type="xint" value="0"/>
+        </config>
+        <config key="inVars">
+            <entry key="array-size" type="xint" value="0"/>
+        </config>
+        <entry key="version" type="xstring" value="version 1.x"/>
+        <entry key="templateUUID" type="xstring" isnull="true" value=""/>
+        <entry key="runOnExecute" type="xboolean" value="false"/>
+        <config key="bundles">
+            <entry key="array-size" type="xint" value="0"/>
+        </config>
+    </config>
+    <entry key="customDescription" type="xstring" isnull="true" value=""/>
+    <entry key="state" type="xstring" value="CONFIGURED"/>
+    <entry key="factory" type="xstring" value="org.knime.base.node.jsnippet.JavaSnippetNodeFactory"/>
+    <entry key="node-name" type="xstring" value="Java Snippet"/>
+    <entry key="node-bundle-name" type="xstring" value="KNIME Java Snippet Nodes"/>
+    <entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.jsnippets"/>
+    <entry key="node-bundle-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-bundle-version" type="xstring" value="4.5.0.v202110181249"/>
+    <entry key="node-feature-name" type="xstring" value="KNIME Javasnippet"/>
+    <entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.javasnippet.feature.group"/>
+    <entry key="node-feature-vendor" type="xstring" value="KNIME AG, Zurich, Switzerland"/>
+    <entry key="node-feature-version" type="xstring" value="4.5.0.v202110181249"/>
+    <config key="factory_settings"/>
+    <entry key="name" type="xstring" value="Java Snippet"/>
+    <entry key="hasContent" type="xboolean" value="false"/>
+    <entry key="isInactive" type="xboolean" value="false"/>
+    <config key="ports">
+        <config key="port_1">
+            <entry key="index" type="xint" value="1"/>
+            <entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+        </config>
+    </config>
+    <config key="filestores">
+        <entry key="file_store_location" type="xstring" isnull="true" value=""/>
+        <entry key="file_store_id" type="xstring" isnull="true" value=""/>
+    </config>
+</config>

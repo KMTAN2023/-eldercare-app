@@ -1,0 +1,755 @@
+ID_N,CLIENT_ID,NAME_SURNAME,POSTAL_CODE,WC_N,AM_CG,TIME_REQUEST_ID,CENTRE_N,TO_FROM_CENTRE_I,CENTRE_WEEK_DAY,CENTRE_TIME_RANGE
+1,1,Goh Joo Sua,560576,0,1,1,AMK,(1) To Centre,(1) Mon,0800-0900
+2,2,Goh Kwee Hiong,560573,0,1,1,AMK,(1) To Centre,(1) Mon,0800-0900
+3,3,Ng Hong Meng,560311,0,1,1,AMK,(1) To Centre,(1) Mon,0800-0900
+4,4,Ibrahim bin Osman,560323,0,1,1,AMK,(1) To Centre,(1) Mon,0800-0900
+5,5,Ling Khai Eng,560301,0,1,1,AMK,(1) To Centre,(1) Mon,0800-0900
+6,6,Chin Fon Lin Joyce,560244,0,1,1,AMK,(1) To Centre,(1) Mon,0800-0900
+7,7,Kon Chee Yak,560219,0,1,1,AMK,(1) To Centre,(1) Mon,0800-0900
+8,8,Koh Puay Huang,560214,0,1,1,AMK,(1) To Centre,(1) Mon,0800-0900
+9,28,Tan Choon Moh,575921,0,1,1,AMK,(1) To Centre,(1) Mon,0800-0900
+10,29,Quay Peng Leng,789452,0,1,1,AMK,(1) To Centre,(1) Mon,0800-0900
+11,30,Teo Guan Lan,560350,0,1,1,AMK,(1) To Centre,(1) Mon,0800-0900
+12,31,Tan Cheng Geok,560336,0,1,1,AMK,(1) To Centre,(1) Mon,0800-0900
+13,32,Hoi Lan,560533,0,1,1,AMK,(1) To Centre,(1) Mon,0800-0900
+14,33,Chua Ah Sai,560561,0,1,1,AMK,(1) To Centre,(1) Mon,0800-0900
+15,9,Lee Kwai Lin,560610,0,1,2,AMK,(1) To Centre,(1) Mon,0900-1000
+16,10,Khong Bay Chan,560457,0,1,2,AMK,(1) To Centre,(1) Mon,0900-1000
+17,11,Lee Ai Peng,560462,0,1,2,AMK,(1) To Centre,(1) Mon,0900-1000
+18,12,Chua Geak Boey,560472,0,1,2,AMK,(1) To Centre,(1) Mon,0900-1000
+19,13,Ng Ah Poon,560416,0,1,2,AMK,(1) To Centre,(1) Mon,0900-1000
+20,14,Seow Nyuik Moy,560440,0,1,2,AMK,(1) To Centre,(1) Mon,0900-1000
+21,15,Wong Ah Chai,560337,1,0,2,AMK,(1) To Centre,(1) Mon,0900-1000
+22,34,Chee Fong Ngoh,570025,0,1,2,AMK,(1) To Centre,(1) Mon,0900-1000
+23,35,Sia Kiang,570105,0,1,2,AMK,(1) To Centre,(1) Mon,0900-1000
+24,36,Yeo Kiat Cheong,570124,0,1,2,AMK,(1) To Centre,(1) Mon,0900-1000
+25,37,Susan Wong Seet Peng,570249,0,1,2,AMK,(1) To Centre,(1) Mon,0900-1000
+26,38,Ong Soon Bueh,562310,0,1,2,AMK,(1) To Centre,(1) Mon,0900-1000
+27,39,Ong Hai Keat ,560207,0,1,2,AMK,(1) To Centre,(1) Mon,0900-1000
+28,16,Amnah Binte Saini,570229,1,1,3,AMK,(1) To Centre,(1) Mon,1000-1100
+29,17,Chan Moi,560470,1,0,3,AMK,(1) To Centre,(1) Mon,1000-1100
+30,23,Loong Hon Choong,570153,1,0,4,AMK,(1) To Centre,(1) Mon,1300-1400
+31,24,Goh Kam Tee,560336,1,1,4,AMK,(1) To Centre,(1) Mon,1300-1400
+32,25,Seah Ngor Eng,560306,1,0,4,AMK,(1) To Centre,(1) Mon,1300-1400
+33,27,Wang Jong,560222,1,1,4,AMK,(1) To Centre,(1) Mon,1300-1400
+34,1,Goh Joo Sua,560576,0,1,5,AMK,(1) To Centre,(2) Tue,0800-0900
+35,2,Goh Kwee Hiong,560573,0,1,5,AMK,(1) To Centre,(2) Tue,0800-0900
+36,3,Ng Hong Meng,560311,0,1,5,AMK,(1) To Centre,(2) Tue,0800-0900
+37,4,Ibrahim bin Osman,560323,0,1,5,AMK,(1) To Centre,(2) Tue,0800-0900
+38,5,Ling Khai Eng,560301,0,1,5,AMK,(1) To Centre,(2) Tue,0800-0900
+39,6,Chin Fon Lin Joyce,560244,0,1,5,AMK,(1) To Centre,(2) Tue,0800-0900
+40,7,Kon Chee Yak,560219,0,1,5,AMK,(1) To Centre,(2) Tue,0800-0900
+41,8,Koh Puay Huang,560214,0,1,5,AMK,(1) To Centre,(2) Tue,0800-0900
+42,28,Tan Choon Moh,575921,0,1,5,AMK,(1) To Centre,(2) Tue,0800-0900
+43,29,Quay Peng Leng,789452,0,1,5,AMK,(1) To Centre,(2) Tue,0800-0900
+44,30,Teo Guan Lan,560350,0,1,5,AMK,(1) To Centre,(2) Tue,0800-0900
+45,31,Tan Cheng Geok,560336,0,1,5,AMK,(1) To Centre,(2) Tue,0800-0900
+46,32,Hoi Lan,560533,0,1,5,AMK,(1) To Centre,(2) Tue,0800-0900
+47,33,Chua Ah Sai,560561,0,1,5,AMK,(1) To Centre,(2) Tue,0800-0900
+48,9,Lee Kwai Lin,560610,0,1,6,AMK,(1) To Centre,(2) Tue,0900-1000
+49,11,Lee Ai Peng,560462,0,1,6,AMK,(1) To Centre,(2) Tue,0900-1000
+50,12,Chua Geak Boey,560472,0,1,6,AMK,(1) To Centre,(2) Tue,0900-1000
+51,13,Ng Ah Poon,560416,0,1,6,AMK,(1) To Centre,(2) Tue,0900-1000
+52,14,Seow Nyuik Moy,560440,0,1,6,AMK,(1) To Centre,(2) Tue,0900-1000
+53,15,Wong Ah Chai,560337,1,0,6,AMK,(1) To Centre,(2) Tue,0900-1000
+54,34,Chee Fong Ngoh,570025,0,1,6,AMK,(1) To Centre,(2) Tue,0900-1000
+55,35,Sia Kiang,570105,0,1,6,AMK,(1) To Centre,(2) Tue,0900-1000
+56,36,Yeo Kiat Cheong,570124,0,1,6,AMK,(1) To Centre,(2) Tue,0900-1000
+57,37,Susan Wong Seet Peng,570249,0,1,6,AMK,(1) To Centre,(2) Tue,0900-1000
+58,38,Ong Soon Bueh,562310,0,1,6,AMK,(1) To Centre,(2) Tue,0900-1000
+59,39,Ong Hai Keat ,560207,0,1,6,AMK,(1) To Centre,(2) Tue,0900-1000
+60,18,Lee Pegh Lian,560573,1,1,7,AMK,(1) To Centre,(2) Tue,1000-1100
+61,21,Liu Ting Ting,575574,1,1,8,AMK,(1) To Centre,(2) Tue,1300-1400
+62,22,Siti Azizah Binte Mastama,570170,1,0,8,AMK,(1) To Centre,(2) Tue,1300-1400
+63,26,P Sammuvel,560542,1,1,8,AMK,(1) To Centre,(2) Tue,1300-1400
+64,20,Pang Seow Kwee,560222,1,1,8,AMK,(1) To Centre,(2) Tue,1300-1400
+65,1,Goh Joo Sua,560576,0,1,9,AMK,(1) To Centre,(3) Wed,0800-0900
+66,2,Goh Kwee Hiong,560573,0,1,9,AMK,(1) To Centre,(3) Wed,0800-0900
+67,3,Ng Hong Meng,560311,0,1,9,AMK,(1) To Centre,(3) Wed,0800-0900
+68,4,Ibrahim bin Osman,560323,0,1,9,AMK,(1) To Centre,(3) Wed,0800-0900
+69,5,Ling Khai Eng,560301,0,1,9,AMK,(1) To Centre,(3) Wed,0800-0900
+70,6,Chin Fon Lin Joyce,560244,0,1,9,AMK,(1) To Centre,(3) Wed,0800-0900
+71,7,Kon Chee Yak,560219,0,1,9,AMK,(1) To Centre,(3) Wed,0800-0900
+72,8,Koh Puay Huang,560214,0,1,9,AMK,(1) To Centre,(3) Wed,0800-0900
+73,28,Tan Choon Moh,575921,0,1,9,AMK,(1) To Centre,(3) Wed,0800-0900
+74,29,Quay Peng Leng,789452,0,1,9,AMK,(1) To Centre,(3) Wed,0800-0900
+75,30,Teo Guan Lan,560350,0,1,9,AMK,(1) To Centre,(3) Wed,0800-0900
+76,31,Tan Cheng Geok,560336,0,1,9,AMK,(1) To Centre,(3) Wed,0800-0900
+77,32,Hoi Lan,560533,0,1,9,AMK,(1) To Centre,(3) Wed,0800-0900
+78,33,Chua Ah Sai,560561,0,1,9,AMK,(1) To Centre,(3) Wed,0800-0900
+79,9,Lee Kwai Lin,560610,0,1,10,AMK,(1) To Centre,(3) Wed,0900-1000
+80,10,Khong Bay Chan,560457,0,1,10,AMK,(1) To Centre,(3) Wed,0900-1000
+81,11,Lee Ai Peng,560462,0,1,10,AMK,(1) To Centre,(3) Wed,0900-1000
+82,12,Chua Geak Boey,560472,0,1,10,AMK,(1) To Centre,(3) Wed,0900-1000
+83,13,Ng Ah Poon,560416,0,1,10,AMK,(1) To Centre,(3) Wed,0900-1000
+84,14,Seow Nyuik Moy,560440,0,1,10,AMK,(1) To Centre,(3) Wed,0900-1000
+85,15,Wong Ah Chai,560337,1,0,10,AMK,(1) To Centre,(3) Wed,0900-1000
+86,34,Chee Fong Ngoh,570025,0,1,10,AMK,(1) To Centre,(3) Wed,0900-1000
+87,35,Sia Kiang,570105,0,1,10,AMK,(1) To Centre,(3) Wed,0900-1000
+88,36,Yeo Kiat Cheong,570124,0,1,10,AMK,(1) To Centre,(3) Wed,0900-1000
+89,37,Susan Wong Seet Peng,570249,0,1,10,AMK,(1) To Centre,(3) Wed,0900-1000
+90,38,Ong Soon Bueh,562310,0,1,10,AMK,(1) To Centre,(3) Wed,0900-1000
+91,39,Ong Hai Keat ,560207,0,1,10,AMK,(1) To Centre,(3) Wed,0900-1000
+92,16,Amnah Binte Saini,570229,1,1,11,AMK,(1) To Centre,(3) Wed,1000-1100
+93,19,Rosalind Phoon,561590,1,0,11,AMK,(1) To Centre,(3) Wed,1000-1100
+94,20,Pang Seow Kwee,560222,1,1,11,AMK,(1) To Centre,(3) Wed,1000-1100
+95,24,Goh Kam Tee,560336,1,1,12,AMK,(1) To Centre,(3) Wed,1300-1400
+96,27,Wang Jong,560222,1,1,12,AMK,(1) To Centre,(3) Wed,1300-1400
+97,1,Goh Joo Sua,560576,0,1,13,AMK,(1) To Centre,(4) Thu,0800-0900
+98,2,Goh Kwee Hiong,560573,0,1,13,AMK,(1) To Centre,(4) Thu,0800-0900
+99,3,Ng Hong Meng,560311,0,1,13,AMK,(1) To Centre,(4) Thu,0800-0900
+100,4,Ibrahim bin Osman,560323,0,1,13,AMK,(1) To Centre,(4) Thu,0800-0900
+101,5,Ling Khai Eng,560301,0,1,13,AMK,(1) To Centre,(4) Thu,0800-0900
+102,6,Chin Fon Lin Joyce,560244,0,1,13,AMK,(1) To Centre,(4) Thu,0800-0900
+103,7,Kon Chee Yak,560219,0,1,13,AMK,(1) To Centre,(4) Thu,0800-0900
+104,8,Koh Puay Huang,560214,0,1,13,AMK,(1) To Centre,(4) Thu,0800-0900
+105,28,Tan Choon Moh,575921,0,1,13,AMK,(1) To Centre,(4) Thu,0800-0900
+106,29,Quay Peng Leng,789452,0,1,13,AMK,(1) To Centre,(4) Thu,0800-0900
+107,30,Teo Guan Lan,560350,0,1,13,AMK,(1) To Centre,(4) Thu,0800-0900
+108,31,Tan Cheng Geok,560336,0,1,13,AMK,(1) To Centre,(4) Thu,0800-0900
+109,32,Hoi Lan,560533,0,1,13,AMK,(1) To Centre,(4) Thu,0800-0900
+110,33,Chua Ah Sai,560561,0,1,13,AMK,(1) To Centre,(4) Thu,0800-0900
+111,9,Lee Kwai Lin,560610,0,1,14,AMK,(1) To Centre,(4) Thu,0900-1000
+112,10,Khong Bay Chan,560457,0,1,14,AMK,(1) To Centre,(4) Thu,0900-1000
+113,11,Lee Ai Peng,560462,0,1,14,AMK,(1) To Centre,(4) Thu,0900-1000
+114,12,Chua Geak Boey,560472,0,1,14,AMK,(1) To Centre,(4) Thu,0900-1000
+115,13,Ng Ah Poon,560416,0,1,14,AMK,(1) To Centre,(4) Thu,0900-1000
+116,14,Seow Nyuik Moy,560440,0,1,14,AMK,(1) To Centre,(4) Thu,0900-1000
+117,15,Wong Ah Chai,560337,1,0,14,AMK,(1) To Centre,(4) Thu,0900-1000
+118,34,Chee Fong Ngoh,570025,0,1,14,AMK,(1) To Centre,(4) Thu,0900-1000
+119,35,Sia Kiang,570105,0,1,14,AMK,(1) To Centre,(4) Thu,0900-1000
+120,36,Yeo Kiat Cheong,570124,0,1,14,AMK,(1) To Centre,(4) Thu,0900-1000
+121,37,Susan Wong Seet Peng,570249,0,1,14,AMK,(1) To Centre,(4) Thu,0900-1000
+122,38,Ong Soon Bueh,562310,0,1,14,AMK,(1) To Centre,(4) Thu,0900-1000
+123,39,Ong Hai Keat ,560207,0,1,14,AMK,(1) To Centre,(4) Thu,0900-1000
+124,17,Chan Moi,560470,1,0,15,AMK,(1) To Centre,(4) Thu,1000-1100
+125,18,Lee Pegh Lian,560573,1,1,15,AMK,(1) To Centre,(4) Thu,1000-1100
+126,1,Goh Joo Sua,560576,0,1,16,AMK,(1) To Centre,(5) Fri,0800-0900
+127,2,Goh Kwee Hiong,560573,0,1,16,AMK,(1) To Centre,(5) Fri,0800-0900
+128,3,Ng Hong Meng,560311,0,1,16,AMK,(1) To Centre,(5) Fri,0800-0900
+129,4,Ibrahim bin Osman,560323,0,1,16,AMK,(1) To Centre,(5) Fri,0800-0900
+130,5,Ling Khai Eng,560301,0,1,16,AMK,(1) To Centre,(5) Fri,0800-0900
+131,6,Chin Fon Lin Joyce,560244,0,1,16,AMK,(1) To Centre,(5) Fri,0800-0900
+132,7,Kon Chee Yak,560219,0,1,16,AMK,(1) To Centre,(5) Fri,0800-0900
+133,8,Koh Puay Huang,560214,0,1,16,AMK,(1) To Centre,(5) Fri,0800-0900
+134,28,Tan Choon Moh,575921,0,1,16,AMK,(1) To Centre,(5) Fri,0800-0900
+135,29,Quay Peng Leng,789452,0,1,16,AMK,(1) To Centre,(5) Fri,0800-0900
+136,30,Teo Guan Lan,560350,0,1,16,AMK,(1) To Centre,(5) Fri,0800-0900
+137,31,Tan Cheng Geok,560336,0,1,16,AMK,(1) To Centre,(5) Fri,0800-0900
+138,32,Hoi Lan,560533,0,1,16,AMK,(1) To Centre,(5) Fri,0800-0900
+139,33,Chua Ah Sai,560561,0,1,16,AMK,(1) To Centre,(5) Fri,0800-0900
+140,9,Lee Kwai Lin,560610,0,1,17,AMK,(1) To Centre,(5) Fri,0900-1000
+141,10,Khong Bay Chan,560457,0,1,17,AMK,(1) To Centre,(5) Fri,0900-1000
+142,11,Lee Ai Peng,560462,0,1,17,AMK,(1) To Centre,(5) Fri,0900-1000
+143,12,Chua Geak Boey,560472,0,1,17,AMK,(1) To Centre,(5) Fri,0900-1000
+144,13,Ng Ah Poon,560416,0,1,17,AMK,(1) To Centre,(5) Fri,0900-1000
+145,14,Seow Nyuik Moy,560440,0,1,17,AMK,(1) To Centre,(5) Fri,0900-1000
+146,15,Wong Ah Chai,560337,1,0,17,AMK,(1) To Centre,(5) Fri,0900-1000
+147,34,Chee Fong Ngoh,570025,0,1,17,AMK,(1) To Centre,(5) Fri,0900-1000
+148,35,Sia Kiang,570105,0,1,17,AMK,(1) To Centre,(5) Fri,0900-1000
+149,36,Yeo Kiat Cheong,570124,0,1,17,AMK,(1) To Centre,(5) Fri,0900-1000
+150,37,Susan Wong Seet Peng,570249,0,1,17,AMK,(1) To Centre,(5) Fri,0900-1000
+151,38,Ong Soon Bueh,562310,0,1,17,AMK,(1) To Centre,(5) Fri,0900-1000
+152,39,Ong Hai Keat ,560207,0,1,17,AMK,(1) To Centre,(5) Fri,0900-1000
+153,16,Amnah Binte Saini,570229,1,1,18,AMK,(1) To Centre,(5) Fri,1000-1100
+154,19,Rosalind Phoon,561590,1,0,18,AMK,(1) To Centre,(5) Fri,1000-1100
+155,20,Pang Seow Kwee,560222,1,1,18,AMK,(1) To Centre,(5) Fri,1000-1100
+156,23,Loong Hon Choong,570153,1,0,19,AMK,(1) To Centre,(5) Fri,1300-1400
+157,26,P Sammuvel,560542,1,1,19,AMK,(1) To Centre,(5) Fri,1300-1400
+158,27,Wang Jong,560222,1,1,19,AMK,(1) To Centre,(5) Fri,1300-1400
+159,17,Chan Moi,560470,1,0,20,AMK,(2) From Centre,(1) Mon,1100-1200
+160,16,Amnah Binte Saini,570229,1,1,20,AMK,(2) From Centre,(1) Mon,1100-1200
+161,27,Wang Jong,560222,1,1,21,AMK,(2) From Centre,(1) Mon,1400-1500
+162,25,Seah Ngor Eng,560306,1,0,21,AMK,(2) From Centre,(1) Mon,1400-1500
+163,24,Goh Kam Tee,560336,1,1,21,AMK,(2) From Centre,(1) Mon,1400-1500
+164,23,Loong Hon Choong,570153,1,0,21,AMK,(2) From Centre,(1) Mon,1400-1500
+165,8,Koh Puay Huang,560214,0,1,22,AMK,(2) From Centre,(1) Mon,1500-1600
+166,6,Chin Fon Lin Joyce,560244,0,1,22,AMK,(2) From Centre,(1) Mon,1500-1600
+167,7,Kon Chee Yak,560219,0,1,22,AMK,(2) From Centre,(1) Mon,1500-1600
+168,5,Ling Khai Eng,560301,0,1,22,AMK,(2) From Centre,(1) Mon,1500-1600
+169,4,Ibrahim bin Osman,560323,0,1,22,AMK,(2) From Centre,(1) Mon,1500-1600
+170,3,Ng Hong Meng,560311,0,1,22,AMK,(2) From Centre,(1) Mon,1500-1600
+171,2,Goh Kwee Hiong,560573,0,1,22,AMK,(2) From Centre,(1) Mon,1500-1600
+172,1,Goh Joo Sua,560576,0,1,22,AMK,(2) From Centre,(1) Mon,1500-1600
+173,30,Teo Guan Lan,560350,0,1,22,AMK,(2) From Centre,(1) Mon,1500-1600
+174,31,Tan Cheng Geok,560336,0,1,22,AMK,(2) From Centre,(1) Mon,1500-1600
+175,32,Hoi Lan,560533,0,1,22,AMK,(2) From Centre,(1) Mon,1500-1600
+176,33,Chua Ah Sai,560561,0,1,22,AMK,(2) From Centre,(1) Mon,1500-1600
+177,29,Quay Peng Leng,789452,0,1,22,AMK,(2) From Centre,(1) Mon,1500-1600
+178,28,Tan Choon Moh,575921,0,1,22,AMK,(2) From Centre,(1) Mon,1500-1600
+179,9,Lee Kwai Lin,560610,0,1,23,AMK,(2) From Centre,(1) Mon,1600-1700
+180,10,Khong Bay Chan,560457,0,1,23,AMK,(2) From Centre,(1) Mon,1600-1700
+181,11,Lee Ai Peng,560462,0,1,23,AMK,(2) From Centre,(1) Mon,1600-1700
+182,12,Chua Geak Boey,560472,0,1,23,AMK,(2) From Centre,(1) Mon,1600-1700
+183,13,Ng Ah Poon,560416,0,1,23,AMK,(2) From Centre,(1) Mon,1600-1700
+184,14,Seow Nyuik Moy,560440,0,1,23,AMK,(2) From Centre,(1) Mon,1600-1700
+185,15,Wong Ah Chai,560337,1,0,23,AMK,(2) From Centre,(1) Mon,1600-1700
+186,39,Ong Hai Keat ,560207,0,1,23,AMK,(2) From Centre,(1) Mon,1600-1700
+187,38,Ong Soon Bueh,562310,0,1,23,AMK,(2) From Centre,(1) Mon,1600-1700
+188,34,Chee Fong Ngoh,570025,0,1,23,AMK,(2) From Centre,(1) Mon,1600-1700
+189,37,Susan Wong Seet Peng,570249,0,1,23,AMK,(2) From Centre,(1) Mon,1600-1700
+190,36,Yeo Kiat Cheong,570124,0,1,23,AMK,(2) From Centre,(1) Mon,1600-1700
+191,35,Sia Kiang,570105,0,1,23,AMK,(2) From Centre,(1) Mon,1600-1700
+192,18,Lee Pegh Lian,560573,1,1,24,AMK,(2) From Centre,(2) Tue,1100-1200
+193,20,Pang Seow Kwee,560222,1,1,25,AMK,(2) From Centre,(2) Tue,1400-1500
+194,21,Liu Ting Ting,575574,1,1,25,AMK,(2) From Centre,(2) Tue,1400-1500
+195,22,Siti Azizah Binte Mastama,570170,1,1,25,AMK,(2) From Centre,(2) Tue,1400-1500
+196,26,P Sammuvel,560542,1,1,25,AMK,(2) From Centre,(2) Tue,1400-1500
+197,8,Koh Puay Huang,560214,0,1,26,AMK,(2) From Centre,(2) Tue,1500-1600
+198,6,Chin Fon Lin Joyce,560244,0,1,26,AMK,(2) From Centre,(2) Tue,1500-1600
+199,7,Kon Chee Yak,560219,0,1,26,AMK,(2) From Centre,(2) Tue,1500-1600
+200,5,Ling Khai Eng,560301,0,1,26,AMK,(2) From Centre,(2) Tue,1500-1600
+201,4,Ibrahim bin Osman,560323,0,1,26,AMK,(2) From Centre,(2) Tue,1500-1600
+202,3,Ng Hong Meng,560311,0,1,26,AMK,(2) From Centre,(2) Tue,1500-1600
+203,2,Goh Kwee Hiong,560573,0,1,26,AMK,(2) From Centre,(2) Tue,1500-1600
+204,1,Goh Joo Sua,560576,0,1,26,AMK,(2) From Centre,(2) Tue,1500-1600
+205,30,Teo Guan Lan,560350,0,1,26,AMK,(2) From Centre,(2) Tue,1500-1600
+206,31,Tan Cheng Geok,560336,0,1,26,AMK,(2) From Centre,(2) Tue,1500-1600
+207,32,Hoi Lan,560533,0,1,26,AMK,(2) From Centre,(2) Tue,1500-1600
+208,33,Chua Ah Sai,560561,0,1,26,AMK,(2) From Centre,(2) Tue,1500-1600
+209,29,Quay Peng Leng,789452,0,1,26,AMK,(2) From Centre,(2) Tue,1500-1600
+210,28,Tan Choon Moh,575921,0,1,26,AMK,(2) From Centre,(2) Tue,1500-1600
+211,9,Lee Kwai Lin,560610,0,1,27,AMK,(2) From Centre,(2) Tue,1600-1700
+212,11,Lee Ai Peng,560462,0,1,27,AMK,(2) From Centre,(2) Tue,1600-1700
+213,12,Chua Geak Boey,560472,0,1,27,AMK,(2) From Centre,(2) Tue,1600-1700
+214,13,Ng Ah Poon,560416,0,1,27,AMK,(2) From Centre,(2) Tue,1600-1700
+215,14,Seow Nyuik Moy,560440,0,1,27,AMK,(2) From Centre,(2) Tue,1600-1700
+216,15,Wong Ah Chai,560337,1,0,27,AMK,(2) From Centre,(2) Tue,1600-1700
+217,39,Ong Hai Keat ,560207,0,1,27,AMK,(2) From Centre,(2) Tue,1600-1700
+218,38,Ong Soon Bueh,562310,0,1,27,AMK,(2) From Centre,(2) Tue,1600-1700
+219,34,Chee Fong Ngoh,570025,0,1,27,AMK,(2) From Centre,(2) Tue,1600-1700
+220,37,Susan Wong Seet Peng,570249,0,1,27,AMK,(2) From Centre,(2) Tue,1600-1700
+221,36,Yeo Kiat Cheong,570124,0,1,27,AMK,(2) From Centre,(2) Tue,1600-1700
+222,35,Sia Kiang,570105,0,1,27,AMK,(2) From Centre,(2) Tue,1600-1700
+223,20,Pang Seow Kwee,560222,1,1,28,AMK,(2) From Centre,(3) Wed,1100-1200
+224,19,Rosalind Phoon,561590,1,1,28,AMK,(2) From Centre,(3) Wed,1100-1200
+225,16,Amnah Binte Saini,570229,1,1,28,AMK,(2) From Centre,(3) Wed,1100-1200
+226,27,Wang Jong,560222,1,1,29,AMK,(2) From Centre,(3) Wed,1400-1500
+227,24,Goh Kam Tee,560336,1,1,29,AMK,(2) From Centre,(3) Wed,1400-1500
+228,8,Koh Puay Huang,560214,0,1,30,AMK,(2) From Centre,(3) Wed,1500-1600
+229,6,Chin Fon Lin Joyce,560244,0,1,30,AMK,(2) From Centre,(3) Wed,1500-1600
+230,7,Kon Chee Yak,560219,0,1,30,AMK,(2) From Centre,(3) Wed,1500-1600
+231,5,Ling Khai Eng,560301,0,1,30,AMK,(2) From Centre,(3) Wed,1500-1600
+232,4,Ibrahim bin Osman,560323,0,1,30,AMK,(2) From Centre,(3) Wed,1500-1600
+233,3,Ng Hong Meng,560311,0,1,30,AMK,(2) From Centre,(3) Wed,1500-1600
+234,2,Goh Kwee Hiong,560573,0,1,30,AMK,(2) From Centre,(3) Wed,1500-1600
+235,1,Goh Joo Sua,560576,0,1,30,AMK,(2) From Centre,(3) Wed,1500-1600
+236,30,Teo Guan Lan,560350,0,1,30,AMK,(2) From Centre,(3) Wed,1500-1600
+237,31,Tan Cheng Geok,560336,0,1,30,AMK,(2) From Centre,(3) Wed,1500-1600
+238,32,Hoi Lan,560533,0,1,30,AMK,(2) From Centre,(3) Wed,1500-1600
+239,33,Chua Ah Sai,560561,0,1,30,AMK,(2) From Centre,(3) Wed,1500-1600
+240,29,Quay Peng Leng,789452,0,1,30,AMK,(2) From Centre,(3) Wed,1500-1600
+241,28,Tan Choon Moh,575921,0,1,30,AMK,(2) From Centre,(3) Wed,1500-1600
+242,9,Lee Kwai Lin,560610,0,1,31,AMK,(2) From Centre,(3) Wed,1600-1700
+243,10,Khong Bay Chan,560457,0,1,31,AMK,(2) From Centre,(3) Wed,1600-1700
+244,11,Lee Ai Peng,560462,0,1,31,AMK,(2) From Centre,(3) Wed,1600-1700
+245,12,Chua Geak Boey,560472,0,1,31,AMK,(2) From Centre,(3) Wed,1600-1700
+246,13,Ng Ah Poon,560416,0,1,31,AMK,(2) From Centre,(3) Wed,1600-1700
+247,14,Seow Nyuik Moy,560440,0,1,31,AMK,(2) From Centre,(3) Wed,1600-1700
+248,15,Wong Ah Chai,560337,1,0,31,AMK,(2) From Centre,(3) Wed,1600-1700
+249,39,Ong Hai Keat ,560207,0,1,31,AMK,(2) From Centre,(3) Wed,1600-1700
+250,38,Ong Soon Bueh,562310,0,1,31,AMK,(2) From Centre,(3) Wed,1600-1700
+251,34,Chee Fong Ngoh,570025,0,1,31,AMK,(2) From Centre,(3) Wed,1600-1700
+252,37,Susan Wong Seet Peng,570249,0,1,31,AMK,(2) From Centre,(3) Wed,1600-1700
+253,36,Yeo Kiat Cheong,570124,0,1,31,AMK,(2) From Centre,(3) Wed,1600-1700
+254,35,Sia Kiang,570105,0,1,31,AMK,(2) From Centre,(3) Wed,1600-1700
+255,18,Lee Pegh Lian,560573,1,1,32,AMK,(2) From Centre,(4) Thu,1100-1200
+256,17,Chan Moi,560470,1,0,32,AMK,(2) From Centre,(4) Thu,1100-1200
+257,8,Koh Puay Huang,560214,0,1,33,AMK,(2) From Centre,(4) Thu,1500-1600
+258,6,Chin Fon Lin Joyce,560244,0,1,33,AMK,(2) From Centre,(4) Thu,1500-1600
+259,7,Kon Chee Yak,560219,0,1,33,AMK,(2) From Centre,(4) Thu,1500-1600
+260,5,Ling Khai Eng,560301,0,1,33,AMK,(2) From Centre,(4) Thu,1500-1600
+261,4,Ibrahim bin Osman,560323,0,1,33,AMK,(2) From Centre,(4) Thu,1500-1600
+262,3,Ng Hong Meng,560311,0,1,33,AMK,(2) From Centre,(4) Thu,1500-1600
+263,2,Goh Kwee Hiong,560573,0,1,33,AMK,(2) From Centre,(4) Thu,1500-1600
+264,1,Goh Joo Sua,560576,0,1,33,AMK,(2) From Centre,(4) Thu,1500-1600
+265,30,Teo Guan Lan,560350,0,1,33,AMK,(2) From Centre,(4) Thu,1500-1600
+266,31,Tan Cheng Geok,560336,0,1,33,AMK,(2) From Centre,(4) Thu,1500-1600
+267,32,Hoi Lan,560533,0,1,33,AMK,(2) From Centre,(4) Thu,1500-1600
+268,33,Chua Ah Sai,560561,0,1,33,AMK,(2) From Centre,(4) Thu,1500-1600
+269,29,Quay Peng Leng,789452,0,1,33,AMK,(2) From Centre,(4) Thu,1500-1600
+270,28,Tan Choon Moh,575921,0,1,33,AMK,(2) From Centre,(4) Thu,1500-1600
+271,9,Lee Kwai Lin,560610,0,1,34,AMK,(2) From Centre,(4) Thu,1600-1700
+272,10,Khong Bay Chan,560457,0,1,34,AMK,(2) From Centre,(4) Thu,1600-1700
+273,11,Lee Ai Peng,560462,0,1,34,AMK,(2) From Centre,(4) Thu,1600-1700
+274,12,Chua Geak Boey,560472,0,1,34,AMK,(2) From Centre,(4) Thu,1600-1700
+275,13,Ng Ah Poon,560416,0,1,34,AMK,(2) From Centre,(4) Thu,1600-1700
+276,14,Seow Nyuik Moy,560440,0,1,34,AMK,(2) From Centre,(4) Thu,1600-1700
+277,15,Wong Ah Chai,560337,1,0,34,AMK,(2) From Centre,(4) Thu,1600-1700
+278,39,Ong Hai Keat ,560207,0,1,34,AMK,(2) From Centre,(4) Thu,1600-1700
+279,38,Ong Soon Bueh,562310,0,1,34,AMK,(2) From Centre,(4) Thu,1600-1700
+280,34,Chee Fong Ngoh,570025,0,1,34,AMK,(2) From Centre,(4) Thu,1600-1700
+281,37,Susan Wong Seet Peng,570249,0,1,34,AMK,(2) From Centre,(4) Thu,1600-1700
+282,36,Yeo Kiat Cheong,570124,0,1,34,AMK,(2) From Centre,(4) Thu,1600-1700
+283,35,Sia Kiang,570105,0,1,34,AMK,(2) From Centre,(4) Thu,1600-1700
+284,20,Pang Seow Kwee,560222,1,1,35,AMK,(2) From Centre,(5) Fri,1100-1200
+285,19,Rosalind Phoon,561590,1,1,35,AMK,(2) From Centre,(5) Fri,1100-1200
+286,16,Amnah Binte Saini,570229,1,1,35,AMK,(2) From Centre,(5) Fri,1100-1200
+287,27,Wang Jong,560222,1,1,36,AMK,(2) From Centre,(5) Fri,1400-1500
+288,26,P Sammuvel,560542,1,1,36,AMK,(2) From Centre,(5) Fri,1400-1500
+289,23,Loong Hon Choong,570153,1,0,36,AMK,(2) From Centre,(5) Fri,1400-1500
+290,8,Koh Puay Huang,560214,0,1,37,AMK,(2) From Centre,(5) Fri,1500-1600
+291,6,Chin Fon Lin Joyce,560244,0,1,37,AMK,(2) From Centre,(5) Fri,1500-1600
+292,7,Kon Chee Yak,560219,0,1,37,AMK,(2) From Centre,(5) Fri,1500-1600
+293,5,Ling Khai Eng,560301,0,1,37,AMK,(2) From Centre,(5) Fri,1500-1600
+294,4,Ibrahim bin Osman,560323,0,1,37,AMK,(2) From Centre,(5) Fri,1500-1600
+295,3,Ng Hong Meng,560311,0,1,37,AMK,(2) From Centre,(5) Fri,1500-1600
+296,2,Goh Kwee Hiong,560573,0,1,37,AMK,(2) From Centre,(5) Fri,1500-1600
+297,1,Goh Joo Sua,560576,0,1,37,AMK,(2) From Centre,(5) Fri,1500-1600
+298,30,Teo Guan Lan,560350,0,1,37,AMK,(2) From Centre,(5) Fri,1500-1600
+299,31,Tan Cheng Geok,560336,0,1,37,AMK,(2) From Centre,(5) Fri,1500-1600
+300,32,Hoi Lan,560533,0,1,37,AMK,(2) From Centre,(5) Fri,1500-1600
+301,33,Chua Ah Sai,560561,0,1,37,AMK,(2) From Centre,(5) Fri,1500-1600
+302,29,Quay Peng Leng,789452,0,1,37,AMK,(2) From Centre,(5) Fri,1500-1600
+303,28,Tan Choon Moh,575921,0,1,37,AMK,(2) From Centre,(5) Fri,1500-1600
+304,9,Lee Kwai Lin,560610,0,1,38,AMK,(2) From Centre,(5) Fri,1600-1700
+305,10,Khong Bay Chan,560457,0,1,38,AMK,(2) From Centre,(5) Fri,1600-1700
+306,11,Lee Ai Peng,560462,0,1,38,AMK,(2) From Centre,(5) Fri,1600-1700
+307,12,Chua Geak Boey,560472,0,1,38,AMK,(2) From Centre,(5) Fri,1600-1700
+308,13,Ng Ah Poon,560416,0,1,38,AMK,(2) From Centre,(5) Fri,1600-1700
+309,14,Seow Nyuik Moy,560440,0,1,38,AMK,(2) From Centre,(5) Fri,1600-1700
+310,15,Wong Ah Chai,560337,1,0,38,AMK,(2) From Centre,(5) Fri,1600-1700
+311,39,Ong Hai Keat ,560207,0,1,38,AMK,(2) From Centre,(5) Fri,1600-1700
+312,38,Ong Soon Bueh,562310,0,1,38,AMK,(2) From Centre,(5) Fri,1600-1700
+313,34,Chee Fong Ngoh,570025,0,1,38,AMK,(2) From Centre,(5) Fri,1600-1700
+314,37,Susan Wong Seet Peng,570249,0,1,38,AMK,(2) From Centre,(5) Fri,1600-1700
+315,36,Yeo Kiat Cheong,570124,0,1,38,AMK,(2) From Centre,(5) Fri,1600-1700
+316,35,Sia Kiang,570105,0,1,38,AMK,(2) From Centre,(5) Fri,1600-1700
+317,86,Tay Wee Kim,562590,1,0,39,APC,(1) To Centre,(1) Mon,0800-0900
+318,87,Hoong Luang Gieu,560317,0,1,39,APC,(1) To Centre,(1) Mon,0800-0900
+319,88,Ng Kim Eng,560301,0,1,39,APC,(1) To Centre,(1) Mon,0800-0900
+320,89,Ng Soy Seng,560253,0,1,39,APC,(1) To Centre,(1) Mon,0800-0900
+321,90,Low Yoke Heng,560229,0,1,39,APC,(1) To Centre,(1) Mon,0800-0900
+322,102,Tan Thiam Huat ,570407,0,1,39,APC,(1) To Centre,(1) Mon,0800-0900
+323,103,Quek Gek Neng,560416,0,1,39,APC,(1) To Centre,(1) Mon,0800-0900
+324,104,Tan Siang Ngoh,560443,0,1,39,APC,(1) To Centre,(1) Mon,0800-0900
+325,105,Chan Ngot You,560429,0,1,39,APC,(1) To Centre,(1) Mon,0800-0900
+326,91,Loh Siok Lan,560502,1,0,40,APC,(1) To Centre,(1) Mon,0900-1000
+327,92,Wee Ah Tow,560520,1,0,40,APC,(1) To Centre,(1) Mon,0900-1000
+328,93,Devandran S/o Ramasamy Govindasamy,560533,1,0,40,APC,(1) To Centre,(1) Mon,0900-1000
+329,94,Chia Sian Kiow,572152,1,1,41,APC,(1) To Centre,(1) Mon,1300-1400
+330,98,Wong Sow Wang,560576,1,1,41,APC,(1) To Centre,(1) Mon,1300-1400
+331,86,Tay Wee Kim,562590,1,0,42,APC,(1) To Centre,(2) Tue,0800-0900
+332,87,Hoong Luang Gieu,560317,0,1,42,APC,(1) To Centre,(2) Tue,0800-0900
+333,88,Ng Kim Eng,560301,0,1,42,APC,(1) To Centre,(2) Tue,0800-0900
+334,89,Ng Soy Seng,560253,0,1,42,APC,(1) To Centre,(2) Tue,0800-0900
+335,90,Low Yoke Heng,560229,0,1,42,APC,(1) To Centre,(2) Tue,0800-0900
+336,102,Tan Thiam Huat ,570407,0,1,42,APC,(1) To Centre,(2) Tue,0800-0900
+337,103,Quek Gek Neng,560416,0,1,42,APC,(1) To Centre,(2) Tue,0800-0900
+338,104,Tan Siang Ngoh,560443,0,1,42,APC,(1) To Centre,(2) Tue,0800-0900
+339,105,Chan Ngot You,560429,0,1,42,APC,(1) To Centre,(2) Tue,0800-0900
+340,91,Loh Siok Lan,560502,1,0,43,APC,(1) To Centre,(2) Tue,0900-1000
+341,92,Wee Ah Tow,560520,1,0,43,APC,(1) To Centre,(2) Tue,0900-1000
+342,93,Devandran S/o Ramasamy Govindasamy,560533,1,0,43,APC,(1) To Centre,(2) Tue,0900-1000
+343,98,Wong Sow Wang,560576,1,1,44,APC,(1) To Centre,(2) Tue,1300-1400
+344,99,Ong Teow Chan,560416,1,1,44,APC,(1) To Centre,(2) Tue,1300-1400
+345,100,Sarip Bin Ahmad,560333,0,1,44,APC,(1) To Centre,(2) Tue,1300-1400
+346,101,Lee Kim Eng,560303,1,1,44,APC,(1) To Centre,(2) Tue,1300-1400
+347,86,Tay Wee Kim,562590,1,0,45,APC,(1) To Centre,(3) Wed,0800-0900
+348,87,Hoong Luang Gieu,560317,0,1,45,APC,(1) To Centre,(3) Wed,0800-0900
+349,88,Ng Kim Eng,560301,0,1,45,APC,(1) To Centre,(3) Wed,0800-0900
+350,89,Ng Soy Seng,560253,0,1,45,APC,(1) To Centre,(3) Wed,0800-0900
+351,90,Low Yoke Heng,560229,0,1,45,APC,(1) To Centre,(3) Wed,0800-0900
+352,102,Tan Thiam Huat ,570407,0,1,45,APC,(1) To Centre,(3) Wed,0800-0900
+353,103,Quek Gek Neng,560416,0,1,45,APC,(1) To Centre,(3) Wed,0800-0900
+354,104,Tan Siang Ngoh,560443,0,1,45,APC,(1) To Centre,(3) Wed,0800-0900
+355,105,Chan Ngot You,560429,0,1,45,APC,(1) To Centre,(3) Wed,0800-0900
+356,91,Loh Siok Lan,560502,1,0,46,APC,(1) To Centre,(3) Wed,0900-1000
+357,92,Wee Ah Tow,560520,1,0,46,APC,(1) To Centre,(3) Wed,0900-1000
+358,93,Devandran S/o Ramasamy Govindasamy,560533,1,0,46,APC,(1) To Centre,(3) Wed,0900-1000
+359,96,Lee Chee Meng,560560,1,1,47,APC,(1) To Centre,(3) Wed,1000-1100
+360,97,Tan Ah Hoon,560522,1,1,47,APC,(1) To Centre,(3) Wed,1000-1100
+361,86,Tay Wee Kim,562590,1,0,48,APC,(1) To Centre,(4) Thu,0800-0900
+362,87,Hoong Luang Gieu,560317,0,1,48,APC,(1) To Centre,(4) Thu,0800-0900
+363,88,Ng Kim Eng,560301,0,1,48,APC,(1) To Centre,(4) Thu,0800-0900
+364,89,Ng Soy Seng,560253,0,1,48,APC,(1) To Centre,(4) Thu,0800-0900
+365,90,Low Yoke Heng,560229,0,1,48,APC,(1) To Centre,(4) Thu,0800-0900
+366,102,Tan Thiam Huat ,570407,0,1,48,APC,(1) To Centre,(4) Thu,0800-0900
+367,103,Quek Gek Neng,560416,0,1,48,APC,(1) To Centre,(4) Thu,0800-0900
+368,104,Tan Siang Ngoh,560443,0,1,48,APC,(1) To Centre,(4) Thu,0800-0900
+369,105,Chan Ngot You,560429,0,1,48,APC,(1) To Centre,(4) Thu,0800-0900
+370,91,Loh Siok Lan,560502,1,0,49,APC,(1) To Centre,(4) Thu,0900-1000
+371,92,Wee Ah Tow,560520,1,0,49,APC,(1) To Centre,(4) Thu,0900-1000
+372,93,Devandran S/o Ramasamy Govindasamy,560533,1,0,49,APC,(1) To Centre,(4) Thu,0900-1000
+373,99,Ong Teow Chan,560416,1,1,50,APC,(1) To Centre,(4) Thu,1300-1400
+374,100,Sarip Bin Ahmad,560333,0,1,50,APC,(1) To Centre,(4) Thu,1300-1400
+375,101,Lee Kim Eng,560303,1,1,50,APC,(1) To Centre,(4) Thu,1300-1400
+376,86,Tay Wee Kim,562590,1,0,51,APC,(1) To Centre,(5) Fri,0800-0900
+377,87,Hoong Luang Gieu,560317,0,1,51,APC,(1) To Centre,(5) Fri,0800-0900
+378,88,Ng Kim Eng,560301,0,1,51,APC,(1) To Centre,(5) Fri,0800-0900
+379,89,Ng Soy Seng,560253,0,1,51,APC,(1) To Centre,(5) Fri,0800-0900
+380,90,Low Yoke Heng,560229,0,1,51,APC,(1) To Centre,(5) Fri,0800-0900
+381,102,Tan Thiam Huat ,570407,0,1,51,APC,(1) To Centre,(5) Fri,0800-0900
+382,103,Quek Gek Neng,560416,0,1,51,APC,(1) To Centre,(5) Fri,0800-0900
+383,104,Tan Siang Ngoh,560443,0,1,51,APC,(1) To Centre,(5) Fri,0800-0900
+384,105,Chan Ngot You,560429,0,1,51,APC,(1) To Centre,(5) Fri,0800-0900
+385,91,Loh Siok Lan,560502,1,0,52,APC,(1) To Centre,(5) Fri,0900-1000
+386,92,Wee Ah Tow,560520,1,0,52,APC,(1) To Centre,(5) Fri,0900-1000
+387,93,Devandran S/o Ramasamy Govindasamy,560533,1,0,52,APC,(1) To Centre,(5) Fri,0900-1000
+388,94,Chia Sian Kiow,572152,1,1,53,APC,(1) To Centre,(5) Fri,1000-1100
+389,95,Lee Swee Keok,560475,0,1,53,APC,(1) To Centre,(5) Fri,1000-1100
+390,94,Chia Sian Kiow,572152,1,1,54,APC,(2) From Centre,(1) Mon,1400-1500
+391,98,Wong Sow Wang,560576,1,1,54,APC,(2) From Centre,(1) Mon,1400-1500
+392,86,Tay Wee Kim,562590,1,0,55,APC,(2) From Centre,(1) Mon,1500-1600
+393,87,Hoong Luang Gieu,560317,0,1,55,APC,(2) From Centre,(1) Mon,1500-1600
+394,88,Ng Kim Eng,560301,0,1,55,APC,(2) From Centre,(1) Mon,1500-1600
+395,89,Ng Soy Seng,560253,0,1,55,APC,(2) From Centre,(1) Mon,1500-1600
+396,90,Low Yoke Heng,560229,0,1,55,APC,(2) From Centre,(1) Mon,1500-1600
+397,91,Loh Siok Lan,560502,1,0,56,APC,(2) From Centre,(1) Mon,1600-1700
+398,92,Wee Ah Tow,560520,1,0,56,APC,(2) From Centre,(1) Mon,1600-1700
+399,93,Devandran S/o Ramasamy Govindasamy,560533,1,0,56,APC,(2) From Centre,(1) Mon,1600-1700
+400,102,Tan Thiam Huat ,570407,0,1,57,APC,(2) From Centre,(1) Mon,1700-1800
+401,103,Quek Gek Neng,560416,0,1,57,APC,(2) From Centre,(1) Mon,1700-1800
+402,104,Tan Siang Ngoh,560443,0,1,57,APC,(2) From Centre,(1) Mon,1700-1800
+403,105,Chan Ngot You,560429,0,1,57,APC,(2) From Centre,(1) Mon,1700-1800
+404,98,Wong Sow Wang,560576,1,1,58,APC,(2) From Centre,(2) Tue,1400-1500
+405,99,Ong Teow Chan,560416,1,1,58,APC,(2) From Centre,(2) Tue,1400-1500
+406,100,Sarip Bin Ahmad,560333,0,1,58,APC,(2) From Centre,(2) Tue,1400-1500
+407,101,Lee Kim Eng,560303,1,1,58,APC,(2) From Centre,(2) Tue,1400-1500
+408,86,Tay Wee Kim,562590,1,0,59,APC,(2) From Centre,(2) Tue,1500-1600
+409,87,Hoong Luang Gieu,560317,0,1,59,APC,(2) From Centre,(2) Tue,1500-1600
+410,88,Ng Kim Eng,560301,0,1,59,APC,(2) From Centre,(2) Tue,1500-1600
+411,89,Ng Soy Seng,560253,0,1,59,APC,(2) From Centre,(2) Tue,1500-1600
+412,90,Low Yoke Heng,560229,0,1,59,APC,(2) From Centre,(2) Tue,1500-1600
+413,91,Loh Siok Lan,560502,1,0,60,APC,(2) From Centre,(2) Tue,1600-1700
+414,92,Wee Ah Tow,560520,1,0,60,APC,(2) From Centre,(2) Tue,1600-1700
+415,93,Devandran S/o Ramasamy Govindasamy,560533,1,0,60,APC,(2) From Centre,(2) Tue,1600-1700
+416,102,Tan Thiam Huat ,570407,0,1,61,APC,(2) From Centre,(2) Tue,1700-1800
+417,103,Quek Gek Neng,560416,0,1,61,APC,(2) From Centre,(2) Tue,1700-1800
+418,104,Tan Siang Ngoh,560443,0,1,61,APC,(2) From Centre,(2) Tue,1700-1800
+419,105,Chan Ngot You,560429,0,1,61,APC,(2) From Centre,(2) Tue,1700-1800
+420,96,Lee Chee Meng,560560,1,1,62,APC,(2) From Centre,(3) Wed,1100-1200
+421,97,Tan Ah Hoon,560522,1,1,62,APC,(2) From Centre,(3) Wed,1100-1200
+422,86,Tay Wee Kim,562590,1,0,63,APC,(2) From Centre,(3) Wed,1500-1600
+423,87,Hoong Luang Gieu,560317,0,1,63,APC,(2) From Centre,(3) Wed,1500-1600
+424,88,Ng Kim Eng,560301,0,1,63,APC,(2) From Centre,(3) Wed,1500-1600
+425,89,Ng Soy Seng,560253,0,1,63,APC,(2) From Centre,(3) Wed,1500-1600
+426,90,Low Yoke Heng,560229,0,1,63,APC,(2) From Centre,(3) Wed,1500-1600
+427,91,Loh Siok Lan,560502,1,0,64,APC,(2) From Centre,(3) Wed,1600-1700
+428,92,Wee Ah Tow,560520,1,0,64,APC,(2) From Centre,(3) Wed,1600-1700
+429,93,Devandran S/o Ramasamy Govindasamy,560533,1,0,64,APC,(2) From Centre,(3) Wed,1600-1700
+430,102,Tan Thiam Huat ,570407,0,1,65,APC,(2) From Centre,(3) Wed,1700-1800
+431,103,Quek Gek Neng,560416,0,1,65,APC,(2) From Centre,(3) Wed,1700-1800
+432,104,Tan Siang Ngoh,560443,0,1,65,APC,(2) From Centre,(3) Wed,1700-1800
+433,105,Chan Ngot You,560429,0,1,65,APC,(2) From Centre,(3) Wed,1700-1800
+434,99,Ong Teow Chan,560416,1,1,66,APC,(2) From Centre,(4) Thu,1400-1500
+435,100,Sarip Bin Ahmad,560333,0,1,66,APC,(2) From Centre,(4) Thu,1400-1500
+436,101,Lee Kim Eng,560303,1,1,66,APC,(2) From Centre,(4) Thu,1400-1500
+437,86,Tay Wee Kim,562590,1,0,67,APC,(2) From Centre,(4) Thu,1500-1600
+438,87,Hoong Luang Gieu,560317,0,1,67,APC,(2) From Centre,(4) Thu,1500-1600
+439,88,Ng Kim Eng,560301,0,1,67,APC,(2) From Centre,(4) Thu,1500-1600
+440,89,Ng Soy Seng,560253,0,1,67,APC,(2) From Centre,(4) Thu,1500-1600
+441,90,Low Yoke Heng,560229,0,1,67,APC,(2) From Centre,(4) Thu,1500-1600
+442,91,Loh Siok Lan,560502,1,0,68,APC,(2) From Centre,(4) Thu,1600-1700
+443,92,Wee Ah Tow,560520,1,0,68,APC,(2) From Centre,(4) Thu,1600-1700
+444,93,Devandran S/o Ramasamy Govindasamy,560533,1,0,68,APC,(2) From Centre,(4) Thu,1600-1700
+445,102,Tan Thiam Huat ,570407,0,1,69,APC,(2) From Centre,(4) Thu,1700-1800
+446,103,Quek Gek Neng,560416,0,1,69,APC,(2) From Centre,(4) Thu,1700-1800
+447,104,Tan Siang Ngoh,560443,0,1,69,APC,(2) From Centre,(4) Thu,1700-1800
+448,105,Chan Ngot You,560429,0,1,69,APC,(2) From Centre,(4) Thu,1700-1800
+449,94,Chia Sian Kiow,572152,1,1,70,APC,(2) From Centre,(5) Fri,1100-1200
+450,95,Lee Swee Keok,560475,0,1,70,APC,(2) From Centre,(5) Fri,1100-1200
+451,86,Tay Wee Kim,562590,1,0,71,APC,(2) From Centre,(5) Fri,1500-1600
+452,87,Hoong Luang Gieu,560317,0,1,71,APC,(2) From Centre,(5) Fri,1500-1600
+453,88,Ng Kim Eng,560301,0,1,71,APC,(2) From Centre,(5) Fri,1500-1600
+454,89,Ng Soy Seng,560253,0,1,71,APC,(2) From Centre,(5) Fri,1500-1600
+455,90,Low Yoke Heng,560229,0,1,71,APC,(2) From Centre,(5) Fri,1500-1600
+456,91,Loh Siok Lan,560502,1,0,72,APC,(2) From Centre,(5) Fri,1600-1700
+457,92,Wee Ah Tow,560520,1,0,72,APC,(2) From Centre,(5) Fri,1600-1700
+458,93,Devandran S/o Ramasamy Govindasamy,560533,1,0,72,APC,(2) From Centre,(5) Fri,1600-1700
+459,102,Tan Thiam Huat ,570407,0,1,73,APC,(2) From Centre,(5) Fri,1700-1800
+460,103,Quek Gek Neng,560416,0,1,73,APC,(2) From Centre,(5) Fri,1700-1800
+461,104,Tan Siang Ngoh,560443,0,1,73,APC,(2) From Centre,(5) Fri,1700-1800
+462,105,Chan Ngot You,560429,0,1,73,APC,(2) From Centre,(5) Fri,1700-1800
+463,40,Long Foo Tien ,787722,1,0,74,KBC,(1) To Centre,(1) Mon,0800-0900
+464,41,Soh Siu Tuan,574920,0,1,74,KBC,(1) To Centre,(1) Mon,0800-0900
+465,42,Lim Kim Hoo,560182,0,1,74,KBC,(1) To Centre,(1) Mon,0800-0900
+466,43,Lee Ah Huat,560156,0,1,74,KBC,(1) To Centre,(1) Mon,0800-0900
+467,44,Chin Nghee Siak,560155,0,1,74,KBC,(1) To Centre,(1) Mon,0800-0900
+468,59,Coreen Florence ,560424,0,1,74,KBC,(1) To Centre,(1) Mon,0800-0900
+469,60,Tan Pauline,578375,1,0,74,KBC,(1) To Centre,(1) Mon,0800-0900
+470,61,Lee Choek,560182,0,1,74,KBC,(1) To Centre,(1) Mon,0800-0900
+471,62,Tan Yuk Nga,560170,0,1,74,KBC,(1) To Centre,(1) Mon,0800-0900
+472,45,Tay Poh Hiang,560636,0,1,75,KBC,(1) To Centre,(1) Mon,0900-1000
+473,46,Goh Ah Ter,560232,0,1,75,KBC,(1) To Centre,(1) Mon,0900-1000
+474,47,Long Jee Eng,560153,1,0,75,KBC,(1) To Centre,(1) Mon,0900-1000
+475,48,Philip Sellammah Nee Ratham,560646,1,0,75,KBC,(1) To Centre,(1) Mon,0900-1000
+476,49,Mdm Lim Kek Huay,560612,0,1,75,KBC,(1) To Centre,(1) Mon,0900-1000
+477,50,Tay Sai Ngor,568518,1,0,75,KBC,(1) To Centre,(1) Mon,0900-1000
+478,63,Leong Lan,560108,1,0,75,KBC,(1) To Centre,(1) Mon,0900-1000
+479,64,Tan Phai Hau,560111,1,0,75,KBC,(1) To Centre,(1) Mon,0900-1000
+480,65,Chong Siew Ying,574995,0,1,75,KBC,(1) To Centre,(1) Mon,0900-1000
+481,66,Tan Kiam Pin ,560178,0,1,75,KBC,(1) To Centre,(1) Mon,0900-1000
+482,51,Low Ah Jong,570024,0,1,76,KBC,(1) To Centre,(1) Mon,1000-1100
+483,52,Kok Kwee Hiong,575456,1,1,76,KBC,(1) To Centre,(1) Mon,1000-1100
+484,53,Wang Tung Ying,578824,1,0,76,KBC,(1) To Centre,(1) Mon,1000-1100
+485,55,Shee Sa Ba,570441,0,1,76,KBC,(1) To Centre,(1) Mon,1000-1100
+486,56,Tan Lee,570406,1,0,76,KBC,(1) To Centre,(1) Mon,1000-1100
+487,57,Cheong Nee,579496,0,1,76,KBC,(1) To Centre,(1) Mon,1000-1100
+488,58,Wong Kwee Siang ,579434,1,0,76,KBC,(1) To Centre,(1) Mon,1000-1100
+489,67,Lee Kheng Hua,560348,0,1,76,KBC,(1) To Centre,(1) Mon,1000-1100
+490,69,Tan Suan Chau,560117,1,0,77,KBC,(1) To Centre,(1) Mon,1200-1300
+491,70,Wong Ing Ting ,560212,0,1,77,KBC,(1) To Centre,(1) Mon,1200-1300
+492,79,Wong Seow Jong,560639,1,0,78,KBC,(1) To Centre,(1) Mon,1400-1500
+493,80,HENG CHIANG HONG,560428,1,0,78,KBC,(1) To Centre,(1) Mon,1400-1500
+494,40,Long Foo Tien ,787722,1,0,79,KBC,(1) To Centre,(2) Tue,0800-0900
+495,41,Soh Siu Tuan,574920,0,1,79,KBC,(1) To Centre,(2) Tue,0800-0900
+496,42,Lim Kim Hoo,560182,0,1,79,KBC,(1) To Centre,(2) Tue,0800-0900
+497,43,Lee Ah Huat,560156,0,1,79,KBC,(1) To Centre,(2) Tue,0800-0900
+498,44,Chin Nghee Siak,560155,0,1,79,KBC,(1) To Centre,(2) Tue,0800-0900
+499,59,Coreen Florence ,560424,0,1,79,KBC,(1) To Centre,(2) Tue,0800-0900
+500,60,Tan Pauline,578375,1,0,79,KBC,(1) To Centre,(2) Tue,0800-0900
+501,61,Lee Choek,560182,0,1,79,KBC,(1) To Centre,(2) Tue,0800-0900
+502,62,Tan Yuk Nga,560170,0,1,79,KBC,(1) To Centre,(2) Tue,0800-0900
+503,45,Tay Poh Hiang,560636,0,1,80,KBC,(1) To Centre,(2) Tue,0900-1000
+504,46,Goh Ah Ter,560232,0,1,80,KBC,(1) To Centre,(2) Tue,0900-1000
+505,47,Long Jee Eng,560153,1,0,80,KBC,(1) To Centre,(2) Tue,0900-1000
+506,48,Philip Sellammah Nee Ratham,560646,1,0,80,KBC,(1) To Centre,(2) Tue,0900-1000
+507,49,Mdm Lim Kek Huay,560612,0,1,80,KBC,(1) To Centre,(2) Tue,0900-1000
+508,50,Tay Sai Ngor,568518,1,0,80,KBC,(1) To Centre,(2) Tue,0900-1000
+509,63,Leong Lan,560108,1,0,80,KBC,(1) To Centre,(2) Tue,0900-1000
+510,64,Tan Phai Hau,560111,1,0,80,KBC,(1) To Centre,(2) Tue,0900-1000
+511,65,Chong Siew Ying,574995,0,1,80,KBC,(1) To Centre,(2) Tue,0900-1000
+512,66,Tan Kiam Pin ,560178,0,1,80,KBC,(1) To Centre,(2) Tue,0900-1000
+513,52,Kok Kwee Hiong,575456,1,1,81,KBC,(1) To Centre,(2) Tue,1000-1100
+514,54,Mdm Lim Hwee Heang,575491,1,0,81,KBC,(1) To Centre,(2) Tue,1000-1100
+515,55,Shee Sa Ba,570441,0,1,81,KBC,(1) To Centre,(2) Tue,1000-1100
+516,56,Tan Lee,570406,1,0,81,KBC,(1) To Centre,(2) Tue,1000-1100
+517,57,Cheong Nee,579496,0,1,81,KBC,(1) To Centre,(2) Tue,1000-1100
+518,67,Lee Kheng Hua,560348,0,1,81,KBC,(1) To Centre,(2) Tue,1000-1100
+519,68,Peh Ah Boon,560322,0,1,81,KBC,(1) To Centre,(2) Tue,1000-1100
+520,71,Yap Yian Seng (1),560650,1,0,82,KBC,(1) To Centre,(2) Tue,1200-1300
+521,72,Phua Cheng Wah,560325,0,1,82,KBC,(1) To Centre,(2) Tue,1200-1300
+522,81,Chng Chok Keng,560305,1,0,83,KBC,(1) To Centre,(2) Tue,1400-1500
+523,82,Tan Siew Eng Nellie,560112,0,1,83,KBC,(1) To Centre,(2) Tue,1400-1500
+524,40,Long Foo Tien ,787722,1,0,84,KBC,(1) To Centre,(3) Wed,0800-0900
+525,41,Soh Siu Tuan,574920,0,1,84,KBC,(1) To Centre,(3) Wed,0800-0900
+526,42,Lim Kim Hoo,560182,0,1,84,KBC,(1) To Centre,(3) Wed,0800-0900
+527,43,Lee Ah Huat,560156,0,1,84,KBC,(1) To Centre,(3) Wed,0800-0900
+528,44,Chin Nghee Siak,560155,0,1,84,KBC,(1) To Centre,(3) Wed,0800-0900
+529,59,Coreen Florence ,560424,0,1,84,KBC,(1) To Centre,(3) Wed,0800-0900
+530,60,Tan Pauline,578375,1,0,84,KBC,(1) To Centre,(3) Wed,0800-0900
+531,61,Lee Choek,560182,0,1,84,KBC,(1) To Centre,(3) Wed,0800-0900
+532,62,Tan Yuk Nga,560170,0,1,84,KBC,(1) To Centre,(3) Wed,0800-0900
+533,45,Tay Poh Hiang,560636,0,1,85,KBC,(1) To Centre,(3) Wed,0900-1000
+534,46,Goh Ah Ter,560232,0,1,85,KBC,(1) To Centre,(3) Wed,0900-1000
+535,47,Long Jee Eng,560153,1,0,85,KBC,(1) To Centre,(3) Wed,0900-1000
+536,48,Philip Sellammah Nee Ratham,560646,1,0,85,KBC,(1) To Centre,(3) Wed,0900-1000
+537,49,Mdm Lim Kek Huay,560612,0,1,85,KBC,(1) To Centre,(3) Wed,0900-1000
+538,50,Tay Sai Ngor,568518,1,0,85,KBC,(1) To Centre,(3) Wed,0900-1000
+539,63,Leong Lan,560108,1,0,85,KBC,(1) To Centre,(3) Wed,0900-1000
+540,65,Chong Siew Ying,574995,0,1,85,KBC,(1) To Centre,(3) Wed,0900-1000
+541,66,Tan Kiam Pin ,560178,0,1,85,KBC,(1) To Centre,(3) Wed,0900-1000
+542,51,Low Ah Jong,570024,0,1,86,KBC,(1) To Centre,(3) Wed,1000-1100
+543,52,Kok Kwee Hiong,575456,1,1,86,KBC,(1) To Centre,(3) Wed,1000-1100
+544,53,Wang Tung Ying,578824,1,0,86,KBC,(1) To Centre,(3) Wed,1000-1100
+545,55,Shee Sa Ba,570441,0,1,86,KBC,(1) To Centre,(3) Wed,1000-1100
+546,56,Tan Lee,570406,1,0,86,KBC,(1) To Centre,(3) Wed,1000-1100
+547,57,Cheong Nee,579496,0,1,86,KBC,(1) To Centre,(3) Wed,1000-1100
+548,58,Wong Kwee Siang ,579434,1,0,86,KBC,(1) To Centre,(3) Wed,1000-1100
+549,67,Lee Kheng Hua,560348,0,1,86,KBC,(1) To Centre,(3) Wed,1000-1100
+550,73,Lim Yeok Wah,574988,1,0,87,KBC,(1) To Centre,(3) Wed,1200-1300
+551,74,Leong Wing Tuck,560244,0,1,87,KBC,(1) To Centre,(3) Wed,1200-1300
+552,83,Pang Poh Khian,787056,1,0,88,KBC,(1) To Centre,(3) Wed,1400-1500
+553,72,Phua Cheng Wah,560325,0,1,88,KBC,(1) To Centre,(3) Wed,1400-1500
+554,84,Izamzamah Binte Kusmon,560115,0,1,88,KBC,(1) To Centre,(3) Wed,1400-1500
+555,40,Long Foo Tien ,787722,1,0,89,KBC,(1) To Centre,(4) Thu,0800-0900
+556,41,Soh Siu Tuan,574920,0,1,89,KBC,(1) To Centre,(4) Thu,0800-0900
+557,42,Lim Kim Hoo,560182,0,1,89,KBC,(1) To Centre,(4) Thu,0800-0900
+558,43,Lee Ah Huat,560156,0,1,89,KBC,(1) To Centre,(4) Thu,0800-0900
+559,44,Chin Nghee Siak,560155,0,1,89,KBC,(1) To Centre,(4) Thu,0800-0900
+560,59,Coreen Florence ,560424,0,1,89,KBC,(1) To Centre,(4) Thu,0800-0900
+561,60,Tan Pauline,578375,1,0,89,KBC,(1) To Centre,(4) Thu,0800-0900
+562,61,Lee Choek,560182,0,1,89,KBC,(1) To Centre,(4) Thu,0800-0900
+563,62,Tan Yuk Nga,560170,0,1,89,KBC,(1) To Centre,(4) Thu,0800-0900
+564,45,Tay Poh Hiang,560636,0,1,90,KBC,(1) To Centre,(4) Thu,0900-1000
+565,46,Goh Ah Ter,560232,0,1,90,KBC,(1) To Centre,(4) Thu,0900-1000
+566,47,Long Jee Eng,560153,1,0,90,KBC,(1) To Centre,(4) Thu,0900-1000
+567,48,Philip Sellammah Nee Ratham,560646,1,0,90,KBC,(1) To Centre,(4) Thu,0900-1000
+568,49,Mdm Lim Kek Huay,560612,0,1,90,KBC,(1) To Centre,(4) Thu,0900-1000
+569,50,Tay Sai Ngor,568518,1,0,90,KBC,(1) To Centre,(4) Thu,0900-1000
+570,63,Leong Lan,560108,1,0,90,KBC,(1) To Centre,(4) Thu,0900-1000
+571,64,Tan Phai Hau,560111,1,0,90,KBC,(1) To Centre,(4) Thu,0900-1000
+572,65,Chong Siew Ying,574995,0,1,90,KBC,(1) To Centre,(4) Thu,0900-1000
+573,66,Tan Kiam Pin ,560178,0,1,90,KBC,(1) To Centre,(4) Thu,0900-1000
+574,52,Kok Kwee Hiong,575456,1,1,91,KBC,(1) To Centre,(4) Thu,1000-1100
+575,54,Mdm Lim Hwee Heang,575491,1,0,91,KBC,(1) To Centre,(4) Thu,1000-1100
+576,55,Shee Sa Ba,570441,0,1,91,KBC,(1) To Centre,(4) Thu,1000-1100
+577,56,Tan Lee,570406,1,0,91,KBC,(1) To Centre,(4) Thu,1000-1100
+578,57,Cheong Nee,579496,0,1,91,KBC,(1) To Centre,(4) Thu,1000-1100
+579,67,Lee Kheng Hua,560348,0,1,91,KBC,(1) To Centre,(4) Thu,1000-1100
+580,68,Peh Ah Boon,560322,0,1,91,KBC,(1) To Centre,(4) Thu,1000-1100
+581,75,Yap Yian Seng (2),570450,1,0,92,KBC,(1) To Centre,(4) Thu,1200-1300
+582,76,Tan Tow Suan,560650,1,0,92,KBC,(1) To Centre,(4) Thu,1200-1300
+583,40,Long Foo Tien ,787722,1,0,93,KBC,(1) To Centre,(5) Fri,0800-0900
+584,41,Soh Siu Tuan,574920,0,1,93,KBC,(1) To Centre,(5) Fri,0800-0900
+585,42,Lim Kim Hoo,560182,0,1,93,KBC,(1) To Centre,(5) Fri,0800-0900
+586,43,Lee Ah Huat,560156,0,1,93,KBC,(1) To Centre,(5) Fri,0800-0900
+587,44,Chin Nghee Siak,560155,0,1,93,KBC,(1) To Centre,(5) Fri,0800-0900
+588,59,Coreen Florence ,560424,0,1,93,KBC,(1) To Centre,(5) Fri,0800-0900
+589,60,Tan Pauline,578375,1,0,93,KBC,(1) To Centre,(5) Fri,0800-0900
+590,61,Lee Choek,560182,0,1,93,KBC,(1) To Centre,(5) Fri,0800-0900
+591,62,Tan Yuk Nga,560170,0,1,93,KBC,(1) To Centre,(5) Fri,0800-0900
+592,45,Tay Poh Hiang,560636,0,1,94,KBC,(1) To Centre,(5) Fri,0900-1000
+593,46,Goh Ah Ter,560232,0,1,94,KBC,(1) To Centre,(5) Fri,0900-1000
+594,47,Long Jee Eng,560153,1,0,94,KBC,(1) To Centre,(5) Fri,0900-1000
+595,48,Philip Sellammah Nee Ratham,560646,1,0,94,KBC,(1) To Centre,(5) Fri,0900-1000
+596,49,Mdm Lim Kek Huay,560612,0,1,94,KBC,(1) To Centre,(5) Fri,0900-1000
+597,50,Tay Sai Ngor,568518,1,0,94,KBC,(1) To Centre,(5) Fri,0900-1000
+598,63,Leong Lan,560108,1,0,94,KBC,(1) To Centre,(5) Fri,0900-1000
+599,65,Chong Siew Ying,574995,0,1,94,KBC,(1) To Centre,(5) Fri,0900-1000
+600,66,Tan Kiam Pin ,560178,0,1,94,KBC,(1) To Centre,(5) Fri,0900-1000
+601,51,Low Ah Jong,570024,0,1,95,KBC,(1) To Centre,(5) Fri,1000-1100
+602,52,Kok Kwee Hiong,575456,1,1,95,KBC,(1) To Centre,(5) Fri,1000-1100
+603,54,Mdm Lim Hwee Heang,575491,1,0,95,KBC,(1) To Centre,(5) Fri,1000-1100
+604,55,Shee Sa Ba,570441,0,1,95,KBC,(1) To Centre,(5) Fri,1000-1100
+605,56,Tan Lee,570406,1,0,95,KBC,(1) To Centre,(5) Fri,1000-1100
+606,57,Cheong Nee,579496,0,1,95,KBC,(1) To Centre,(5) Fri,1000-1100
+607,58,Wong Kwee Siang ,579434,1,0,95,KBC,(1) To Centre,(5) Fri,1000-1100
+608,67,Lee Kheng Hua,560348,0,1,95,KBC,(1) To Centre,(5) Fri,1000-1100
+609,77,Than Sen Wu,560255,1,0,96,KBC,(1) To Centre,(5) Fri,1200-1300
+610,78,Lee Kee Mong ,560209,0,1,96,KBC,(1) To Centre,(5) Fri,1200-1300
+611,82,Tan Siew Eng Nellie,560112,0,1,97,KBC,(1) To Centre,(5) Fri,1400-1500
+612,43,Lee Ah Huat,560156,0,1,98,KBC,(2) From Centre,(1) Mon,1500-1600
+613,44,Chin Nghee Siak,560155,0,1,98,KBC,(2) From Centre,(1) Mon,1500-1600
+614,49,Mdm Lim Kek Huay,560612,0,1,98,KBC,(2) From Centre,(1) Mon,1500-1600
+615,42,Lim Kim Hoo,560182,0,1,98,KBC,(2) From Centre,(1) Mon,1500-1600
+616,41,Soh Siu Tuan,574920,0,1,98,KBC,(2) From Centre,(1) Mon,1500-1600
+617,40,Long Foo Tien ,787722,1,0,98,KBC,(2) From Centre,(1) Mon,1500-1600
+618,64,Tan Phai Hau,560111,1,0,98,KBC,(2) From Centre,(1) Mon,1500-1600
+619,62,Tan Yuk Nga,560170,0,1,98,KBC,(2) From Centre,(1) Mon,1500-1600
+620,61,Lee Choek,560182,0,1,98,KBC,(2) From Centre,(1) Mon,1500-1600
+621,60,Tan Pauline,578375,1,0,98,KBC,(2) From Centre,(1) Mon,1500-1600
+622,107,Oh Boon Yong,560618,0,1,98,KBC,(2) From Centre,(1) Mon,1500-1600
+623,59,Coreen Florence ,560424,0,1,98,KBC,(2) From Centre,(1) Mon,1500-1600
+624,57,Cheong Nee,579496,0,1,99,KBC,(2) From Centre,(1) Mon,1600-1700
+625,58,Wong Kwee Siang ,579434,1,0,99,KBC,(2) From Centre,(1) Mon,1600-1700
+626,45,Tay Poh Hiang,560636,0,1,99,KBC,(2) From Centre,(1) Mon,1600-1700
+627,46,Goh Ah Ter,560232,0,1,99,KBC,(2) From Centre,(1) Mon,1600-1700
+628,48,Philip Sellammah Nee Ratham,560646,1,0,99,KBC,(2) From Centre,(1) Mon,1600-1700
+629,47,Long Jee Eng,560153,1,0,99,KBC,(2) From Centre,(1) Mon,1600-1700
+630,65,Chong Siew Ying,574995,0,1,99,KBC,(2) From Centre,(1) Mon,1600-1700
+631,66,Tan Kiam Pin ,560178,0,1,99,KBC,(2) From Centre,(1) Mon,1600-1700
+632,108,Ong Sim Huat ,560217,0,1,99,KBC,(2) From Centre,(1) Mon,1600-1700
+633,67,Lee Kheng Hua,560348,0,1,99,KBC,(2) From Centre,(1) Mon,1600-1700
+634,51,Low Ah Jong,570024,0,1,100,KBC,(2) From Centre,(1) Mon,1700-1800
+635,52,Kok Kwee Hiong,575456,1,1,100,KBC,(2) From Centre,(1) Mon,1700-1800
+636,53,Wang Tung Ying,578824,1,0,100,KBC,(2) From Centre,(1) Mon,1700-1800
+637,55,Shee Sa Ba,570441,0,1,100,KBC,(2) From Centre,(1) Mon,1700-1800
+638,56,Tan Lee,570406,1,0,100,KBC,(2) From Centre,(1) Mon,1700-1800
+639,106,Fong Keng Yew ,574758,1,0,100,KBC,(2) From Centre,(1) Mon,1700-1800
+640,63,Leong Lan,560108,1,0,100,KBC,(2) From Centre,(1) Mon,1700-1800
+641,50,Tay Sai Ngor,568518,1,0,100,KBC,(2) From Centre,(1) Mon,1700-1800
+642,43,Lee Ah Huat,560156,0,1,101,KBC,(2) From Centre,(2) Tue,1500-1600
+643,44,Chin Nghee Siak,560155,0,1,101,KBC,(2) From Centre,(2) Tue,1500-1600
+644,49,Mdm Lim Kek Huay,560612,0,1,101,KBC,(2) From Centre,(2) Tue,1500-1600
+645,42,Lim Kim Hoo,560182,0,1,101,KBC,(2) From Centre,(2) Tue,1500-1600
+646,41,Soh Siu Tuan,574920,0,1,101,KBC,(2) From Centre,(2) Tue,1500-1600
+647,40,Long Foo Tien ,787722,1,0,101,KBC,(2) From Centre,(2) Tue,1500-1600
+648,64,Tan Phai Hau,560111,1,0,101,KBC,(2) From Centre,(2) Tue,1500-1600
+649,62,Tan Yuk Nga,560170,0,1,101,KBC,(2) From Centre,(2) Tue,1500-1600
+650,61,Lee Choek,560182,0,1,101,KBC,(2) From Centre,(2) Tue,1500-1600
+651,60,Tan Pauline,578375,1,0,101,KBC,(2) From Centre,(2) Tue,1500-1600
+652,107,Oh Boon Yong,560618,0,1,101,KBC,(2) From Centre,(2) Tue,1500-1600
+653,59,Coreen Florence ,560424,0,1,101,KBC,(2) From Centre,(2) Tue,1500-1600
+654,57,Cheong Nee,579496,0,1,102,KBC,(2) From Centre,(2) Tue,1600-1700
+655,45,Tay Poh Hiang,560636,0,1,102,KBC,(2) From Centre,(2) Tue,1600-1700
+656,46,Goh Ah Ter,560232,0,1,102,KBC,(2) From Centre,(2) Tue,1600-1700
+657,48,Philip Sellammah Nee Ratham,560646,1,0,102,KBC,(2) From Centre,(2) Tue,1600-1700
+658,47,Long Jee Eng,560153,1,0,102,KBC,(2) From Centre,(2) Tue,1600-1700
+659,65,Chong Siew Ying,574995,0,1,102,KBC,(2) From Centre,(2) Tue,1600-1700
+660,66,Tan Kiam Pin ,560178,0,1,102,KBC,(2) From Centre,(2) Tue,1600-1700
+661,108,Ong Sim Huat ,560217,0,1,102,KBC,(2) From Centre,(2) Tue,1600-1700
+662,67,Lee Kheng Hua,560348,0,1,102,KBC,(2) From Centre,(2) Tue,1600-1700
+663,68,Peh Ah Boon,560322,0,1,102,KBC,(2) From Centre,(2) Tue,1600-1700
+664,52,Kok Kwee Hiong,575456,1,1,103,KBC,(2) From Centre,(2) Tue,1700-1800
+665,54,Mdm Lim Hwee Heang,575491,1,0,103,KBC,(2) From Centre,(2) Tue,1700-1800
+666,55,Shee Sa Ba,570441,0,1,103,KBC,(2) From Centre,(2) Tue,1700-1800
+667,56,Tan Lee,570406,1,0,103,KBC,(2) From Centre,(2) Tue,1700-1800
+668,106,Fong Keng Yew ,574758,1,0,103,KBC,(2) From Centre,(2) Tue,1700-1800
+669,63,Leong Lan,560108,1,0,103,KBC,(2) From Centre,(2) Tue,1700-1800
+670,50,Tay Sai Ngor,568518,1,0,103,KBC,(2) From Centre,(2) Tue,1700-1800
+671,43,Lee Ah Huat,560156,0,1,104,KBC,(2) From Centre,(3) Wed,1500-1600
+672,44,Chin Nghee Siak,560155,0,1,104,KBC,(2) From Centre,(3) Wed,1500-1600
+673,49,Mdm Lim Kek Huay,560612,0,1,104,KBC,(2) From Centre,(3) Wed,1500-1600
+674,42,Lim Kim Hoo,560182,0,1,104,KBC,(2) From Centre,(3) Wed,1500-1600
+675,41,Soh Siu Tuan,574920,0,1,104,KBC,(2) From Centre,(3) Wed,1500-1600
+676,40,Long Foo Tien ,787722,1,0,104,KBC,(2) From Centre,(3) Wed,1500-1600
+677,62,Tan Yuk Nga,560170,0,1,104,KBC,(2) From Centre,(3) Wed,1500-1600
+678,61,Lee Choek,560182,0,1,104,KBC,(2) From Centre,(3) Wed,1500-1600
+679,60,Tan Pauline,578375,1,0,104,KBC,(2) From Centre,(3) Wed,1500-1600
+680,107,Oh Boon Yong,560618,0,1,104,KBC,(2) From Centre,(3) Wed,1500-1600
+681,59,Coreen Florence ,560424,0,1,104,KBC,(2) From Centre,(3) Wed,1500-1600
+682,57,Cheong Nee,579496,0,1,105,KBC,(2) From Centre,(3) Wed,1600-1700
+683,58,Wong Kwee Siang ,579434,1,0,105,KBC,(2) From Centre,(3) Wed,1600-1700
+684,45,Tay Poh Hiang,560636,0,1,105,KBC,(2) From Centre,(3) Wed,1600-1700
+685,46,Goh Ah Ter,560232,0,1,105,KBC,(2) From Centre,(3) Wed,1600-1700
+686,48,Philip Sellammah Nee Ratham,560646,1,0,105,KBC,(2) From Centre,(3) Wed,1600-1700
+687,47,Long Jee Eng,560153,1,0,105,KBC,(2) From Centre,(3) Wed,1600-1700
+688,65,Chong Siew Ying,574995,0,1,105,KBC,(2) From Centre,(3) Wed,1600-1700
+689,66,Tan Kiam Pin ,560178,0,1,105,KBC,(2) From Centre,(3) Wed,1600-1700
+690,108,Ong Sim Huat ,560217,0,1,105,KBC,(2) From Centre,(3) Wed,1600-1700
+691,67,Lee Kheng Hua,560348,0,1,105,KBC,(2) From Centre,(3) Wed,1600-1700
+692,51,Low Ah Jong,570024,0,1,106,KBC,(2) From Centre,(3) Wed,1700-1800
+693,52,Kok Kwee Hiong,575456,1,1,106,KBC,(2) From Centre,(3) Wed,1700-1800
+694,53,Wang Tung Ying,578824,1,0,106,KBC,(2) From Centre,(3) Wed,1700-1800
+695,55,Shee Sa Ba,570441,0,1,106,KBC,(2) From Centre,(3) Wed,1700-1800
+696,56,Tan Lee,570406,1,0,106,KBC,(2) From Centre,(3) Wed,1700-1800
+697,63,Leong Lan,560108,1,0,106,KBC,(2) From Centre,(3) Wed,1700-1800
+698,50,Tay Sai Ngor,568518,1,0,106,KBC,(2) From Centre,(3) Wed,1700-1800
+699,43,Lee Ah Huat,560156,0,1,107,KBC,(2) From Centre,(4) Thu,1500-1600
+700,44,Chin Nghee Siak,560155,0,1,107,KBC,(2) From Centre,(4) Thu,1500-1600
+701,49,Mdm Lim Kek Huay,560612,0,1,107,KBC,(2) From Centre,(4) Thu,1500-1600
+702,42,Lim Kim Hoo,560182,0,1,107,KBC,(2) From Centre,(4) Thu,1500-1600
+703,41,Soh Siu Tuan,574920,0,1,107,KBC,(2) From Centre,(4) Thu,1500-1600
+704,40,Long Foo Tien ,787722,1,0,107,KBC,(2) From Centre,(4) Thu,1500-1600
+705,64,Tan Phai Hau,560111,1,0,107,KBC,(2) From Centre,(4) Thu,1500-1600
+706,62,Tan Yuk Nga,560170,0,1,107,KBC,(2) From Centre,(4) Thu,1500-1600
+707,61,Lee Choek,560182,0,1,107,KBC,(2) From Centre,(4) Thu,1500-1600
+708,60,Tan Pauline,578375,1,0,107,KBC,(2) From Centre,(4) Thu,1500-1600
+709,107,Oh Boon Yong,560618,0,1,107,KBC,(2) From Centre,(4) Thu,1500-1600
+710,59,Coreen Florence ,560424,0,1,107,KBC,(2) From Centre,(4) Thu,1500-1600
+711,57,Cheong Nee,579496,0,1,108,KBC,(2) From Centre,(4) Thu,1600-1700
+712,45,Tay Poh Hiang,560636,0,1,108,KBC,(2) From Centre,(4) Thu,1600-1700
+713,46,Goh Ah Ter,560232,0,1,108,KBC,(2) From Centre,(4) Thu,1600-1700
+714,48,Philip Sellammah Nee Ratham,560646,1,0,108,KBC,(2) From Centre,(4) Thu,1600-1700
+715,47,Long Jee Eng,560153,1,0,108,KBC,(2) From Centre,(4) Thu,1600-1700
+716,65,Chong Siew Ying,574995,0,1,108,KBC,(2) From Centre,(4) Thu,1600-1700
+717,66,Tan Kiam Pin ,560178,0,1,108,KBC,(2) From Centre,(4) Thu,1600-1700
+718,108,Ong Sim Huat ,560217,0,1,108,KBC,(2) From Centre,(4) Thu,1600-1700
+719,67,Lee Kheng Hua,560348,0,1,108,KBC,(2) From Centre,(4) Thu,1600-1700
+720,68,Peh Ah Boon,560322,0,1,108,KBC,(2) From Centre,(4) Thu,1600-1700
+721,52,Kok Kwee Hiong,575456,1,1,109,KBC,(2) From Centre,(4) Thu,1700-1800
+722,54,Mdm Lim Hwee Heang,575491,1,0,109,KBC,(2) From Centre,(4) Thu,1700-1800
+723,55,Shee Sa Ba,570441,0,1,109,KBC,(2) From Centre,(4) Thu,1700-1800
+724,56,Tan Lee,570406,1,0,109,KBC,(2) From Centre,(4) Thu,1700-1800
+725,106,Fong Keng Yew ,574758,1,0,109,KBC,(2) From Centre,(4) Thu,1700-1800
+726,63,Leong Lan,560108,1,0,109,KBC,(2) From Centre,(4) Thu,1700-1800
+727,50,Tay Sai Ngor,568518,1,0,109,KBC,(2) From Centre,(4) Thu,1700-1800
+728,43,Lee Ah Huat,560156,0,1,110,KBC,(2) From Centre,(5) Fri,1500-1600
+729,44,Chin Nghee Siak,560155,0,1,110,KBC,(2) From Centre,(5) Fri,1500-1600
+730,49,Mdm Lim Kek Huay,560612,0,1,110,KBC,(2) From Centre,(5) Fri,1500-1600
+731,42,Lim Kim Hoo,560182,0,1,110,KBC,(2) From Centre,(5) Fri,1500-1600
+732,41,Soh Siu Tuan,574920,0,1,110,KBC,(2) From Centre,(5) Fri,1500-1600
+733,40,Long Foo Tien ,787722,1,0,110,KBC,(2) From Centre,(5) Fri,1500-1600
+734,62,Tan Yuk Nga,560170,0,1,110,KBC,(2) From Centre,(5) Fri,1500-1600
+735,61,Lee Choek,560182,0,1,110,KBC,(2) From Centre,(5) Fri,1500-1600
+736,60,Tan Pauline,578375,1,0,110,KBC,(2) From Centre,(5) Fri,1500-1600
+737,107,Oh Boon Yong,560618,0,1,110,KBC,(2) From Centre,(5) Fri,1500-1600
+738,59,Coreen Florence ,560424,0,1,110,KBC,(2) From Centre,(5) Fri,1500-1600
+739,57,Cheong Nee,579496,0,1,111,KBC,(2) From Centre,(5) Fri,1600-1700
+740,58,Wong Kwee Siang ,579434,1,0,111,KBC,(2) From Centre,(5) Fri,1600-1700
+741,45,Tay Poh Hiang,560636,0,1,111,KBC,(2) From Centre,(5) Fri,1600-1700
+742,46,Goh Ah Ter,560232,0,1,111,KBC,(2) From Centre,(5) Fri,1600-1700
+743,48,Philip Sellammah Nee Ratham,560646,1,0,111,KBC,(2) From Centre,(5) Fri,1600-1700
+744,47,Long Jee Eng,560153,1,0,111,KBC,(2) From Centre,(5) Fri,1600-1700
+745,65,Chong Siew Ying,574995,0,1,111,KBC,(2) From Centre,(5) Fri,1600-1700
+746,66,Tan Kiam Pin ,560178,0,1,111,KBC,(2) From Centre,(5) Fri,1600-1700
+747,108,Ong Sim Huat ,560217,0,1,111,KBC,(2) From Centre,(5) Fri,1600-1700
+748,67,Lee Kheng Hua,560348,0,1,111,KBC,(2) From Centre,(5) Fri,1600-1700
+749,51,Low Ah Jong,570024,0,1,112,KBC,(2) From Centre,(5) Fri,1700-1800
+750,52,Kok Kwee Hiong,575456,1,1,112,KBC,(2) From Centre,(5) Fri,1700-1800
+751,55,Shee Sa Ba,570441,0,1,112,KBC,(2) From Centre,(5) Fri,1700-1800
+752,56,Tan Lee,570406,1,0,112,KBC,(2) From Centre,(5) Fri,1700-1800
+753,63,Leong Lan,560108,1,0,112,KBC,(2) From Centre,(5) Fri,1700-1800
+754,50,Tay Sai Ngor,568518,1,0,112,KBC,(2) From Centre,(5) Fri,1700-1800

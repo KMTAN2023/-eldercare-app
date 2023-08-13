@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eldercare Center Routing Algorithm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(69, 69, 69);
+            background-size: cover;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: #dadd51;
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+        }
+
+        .options>div {
+            margin: 10px;
+        }
+
+        select,
+        a {
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            color: #333333;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        select:hover,
+        a:hover {
+            background-color: #e0e0e0;
+        }
+
+        select:focus,
+        a:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px #007bff;
+        }
+
+        .optimization a {
+            background-color: #ffc107;
+            color: #ffffff;
+        }
+
+        .visualization a {
+            background-color: #17a2b8;
+            color: #ffffff;
+        }
+
+        .users a {
+            background-color: #28a745;
+            color: #ffffff;
+        }
+
+        .data select {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+
+        .data select:hover {
+            background-color: #0069d9;
+        }
+
+        .data select:focus {
+            box-shadow: 0 0 0 2px #ffffff;
+        }
+
+        @media screen and (max-width: 600px) {
+            .options {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            select,
+            a {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Eldercare Center Routing Algorithm</h1>
+    <div class="options">
+        <div class="data">
+            <select onchange="location.href = this.value;">
+                <option value="">Data</option>
+                <optgroup label="Data Import">
+                    <option value="upload/">Data Import</option>
+                </optgroup>
+                <optgroup label="Data Export">
+                    <option value="dataexport/">Data Export</option>
+                </optgroup>
+                <optgroup label="Data Entry">
+                    <option value="elderinfo/">Elder info</option>
+                    <option value="vehicleinfo/">Vehicle info</option>
+                    <option value="centreinfo/">Centre info</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div class="optimization">
+            <p><a href="optimize/">Optimization</a></p>
+        </div>
+
+        <div class="visualization">
+            <p><a href="#">Visualization</a></p>
+        </div>
+
+        <div class="users">
+            <p><a href="#">Users</a></p>
+        </div>
+    </div>
+    <!-- Your HTML template content -->
+    <script>
+        // Extract the message from the URL query parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const message = urlParams.get('message');
+
+        // Check if the 'message' parameter is 'success', and if so, show an alert
+        if (message === 'success') {
+            alert("Process successful");
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+
+{
+    "version": "4.5.1.v202201200941",
+    "created": "2023-07-24 17:27",
+    "nodestats": {
+        "nodes": [
+            {
+                "id": "org.knime.ext.poi3.node.io.filehandling.excel.reader.ExcelTableReaderNodeFactory#Excel Reader",
+                "nrexecs": 3,
+                "nrfails": 0,
+                "exectime": 759,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.ext.jep.JEPNodeFactory#Math Formula",
+                "nrexecs": 7,
+                "nrfails": 0,
+                "exectime": 63,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.double2int2.DoubleToIntNodeFactory#Double To Int",
+                "nrexecs": 6,
+                "nrfails": 0,
+                "exectime": 24,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.colconvert.numbertostring2.NumberToString2NodeFactory#Number To String",
+                "nrexecs": 5,
+                "nrfails": 0,
+                "exectime": 74,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.stringmanipulation.StringManipulationNodeFactory#String Manipulation",
+                "nrexecs": 12,
+                "nrfails": 0,
+                "exectime": 76,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.jsnippet.JavaSnippetNodeFactory#Java Snippet",
+                "nrexecs": 8,
+                "nrfails": 0,
+                "exectime": 48,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.filter.column.DataColumnSpecFilterNodeFactory#Column Filter",
+                "nrexecs": 9,
+                "nrfails": 0,
+                "exectime": 3,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.rank.RankNodeFactory#Rank",
+                "nrexecs": 12,
+                "nrfails": 0,
+                "exectime": 69,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.colconvert.stringtonumber2.StringToNumber2NodeFactory#String To Number",
+                "nrexecs": 4,
+                "nrfails": 0,
+                "exectime": 13,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.rename.RenameNodeFactory#Column Rename",
+                "nrexecs": 13,
+                "nrfails": 0,
+                "exectime": 7,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.groupby.GroupByNodeFactory#GroupBy",
+                "nrexecs": 8,
+                "nrfails": 0,
+                "exectime": 61,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.columnresorter.ColumnResorterNodeFactory#Column Resorter",
+                "nrexecs": 9,
+                "nrfails": 0,
+                "exectime": 3,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.io.filehandling.csv.writer.CSVWriter2NodeFactory#CSV Writer",
+                "nrexecs": 6,
+                "nrfails": 0,
+                "exectime": 92,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.io.filehandling.csv.reader.CSVTableReaderNodeFactory#CSV Reader",
+                "nrexecs": 2,
+                "nrfails": 0,
+                "exectime": 386,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.joiner3.Joiner3NodeFactory#Joiner",
+                "nrexecs": 4,
+                "nrfails": 0,
+                "exectime": 149,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.sorter.SorterNodeFactory#Sorter",
+                "nrexecs": 4,
+                "nrfails": 0,
+                "exectime": 14,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.columnlag.LagColumnNodeFactory#Lag Column",
+                "nrexecs": 2,
+                "nrfails": 0,
+                "exectime": 9,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.preproc.pmml.missingval.compute.MissingValueHandlerNodeFactory#Missing Value",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 146,
+                "nrcreated": 0,
+                "successor": "n/a"
+            },
+            {
+                "id": "org.knime.ext.poi3.node.io.filehandling.excel.writer.ExcelTableWriterNodeFactory#Excel Writer",
+                "nrexecs": 1,
+                "nrfails": 0,
+                "exectime": 305,
+                "nrcreated": 0,
+                "successor": "n/a"
+            }
+        ],
+        "metaNodes": {
+        },
+        "wrappedNodes": {
+        }
+    },
+    "uptime": 363547,
+    "workflowsOpened": 5,
+    "remoteWorkflowsOpened": 0,
+    "columnarStorageWorkflowsOpened": 0,
+    "workflowsImported": 0,
+    "workflowsExported": 0,
+    "launches": 3,
+    "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
+    "timeSinceLastStart": 52064,
+    "crashes": 0,
+    "properlyShutDown": true
+}
