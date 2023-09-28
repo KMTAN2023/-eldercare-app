@@ -1,5 +1,5 @@
 from django import forms
-from .models import vehicle, centre, elder
+from .models import vehicle, centre, elder,MapTripData
 
 class VehicleForm(forms.ModelForm):
     class Meta:
@@ -14,4 +14,9 @@ class CentreForm(forms.ModelForm):
 class ElderForm(forms.ModelForm):
     class Meta:
         model = elder
+        fields = '__all__'
+
+class MapTripDataForm(forms.ModelForm):
+    class Meta:
+        model = MapTripData
         fields = '__all__'

@@ -15,4 +15,11 @@ urlpatterns = [
     path('centreinfo/', views.centreinfo, name='centreinfo'),
     path('optimize/', views.optimize, name='optimize'),
     path('visualize/', views.visualize, name='visualize'),
+    path('map/', views.map_view, name='map'),
+    path('map/uploadmapdata/', views.uploadmapdata, name='uploadmapdata'),
+    path('cleardata/', views.cleardata, name='cleardata'),
+    path('refresh_table/', views.refresh_table, name='refresh_table'),
+    path('map/filter_sort/', views.filter_sort_view, name='filter_sort'),
+    path('trip_detail/<int:trip_id>/', views.trip_detail_view, name='trip_detail'),
+
 ]

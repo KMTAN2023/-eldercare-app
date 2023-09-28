@@ -1,0 +1,697 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Leaflet Map in Django</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+
+        #map {
+            width: 100%;
+            height: 80vh;
+        }
+
+        .route-info {
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 10px;
+        }
+
+            .route-info h3 {
+                margin-top: 0;
+            }
+
+            .route-info div {
+                margin-top: 5px;
+            }
+
+        #toggle-upload {
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+            #toggle-upload:hover {
+                background-color: #45a049;
+            }
+
+        /* Style for the upload section */
+        #upload-section {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+
+        /* Style for the Refresh button */
+        .refresh-button {
+            background-color: #0074D9; /* Blue color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Add space between buttons */
+        .button-container {
+            margin-top: 10px;
+        }
+
+        .btn-clear {
+            background-color: orange; /* Orange background */
+            color: white; /* White text */
+            border: none; /* No border */
+            padding: 10px 20px; /* Adjust padding as needed */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Show hand cursor on hover */
+            margin-top: 20px; /* Add margin to create space above the button */
+        }
+
+            .btn-clear:hover {
+                background-color: darkorange; /* Darker orange on hover */
+            }
+
+        .btn-update-map {
+            background-color: green;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .update-map-section {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px; /* Adjust as needed */
+        }
+
+
+
+        .map-trip-data {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+            .map-trip-data h3 {
+                margin-top: 0;
+            }
+
+            .map-trip-data form {
+                margin-bottom: 10px;
+            }
+
+            .map-trip-data table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+
+            .map-trip-data th,
+            .map-trip-data td {
+                border: 1px solid #ccc;
+                padding: 8px;
+                text-align: left;
+            }
+
+            /* New CSS for dropdown menus */
+            .map-trip-data select {
+                padding: 6px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <div class="route-info">
+        <h3>Route Information</h3>
+        <div id="total-distance"></div>
+        <div id="total-time"></div>
+    </div>
+
+
+    <div class="geocoding">
+        <h3>Geocoding</h3>
+        <input type="text" id="postal-code" placeholder="Enter Singapore Postal Code">
+        <button onclick="geocode()">Geocode</button>
+        <div id="geocoding-result"></div>
+    </div>
+
+    <div id="upload-section" style="display: none;">
+        <!-- Content from upload.html goes here -->
+        <h1>Upload .xlsx File</h1>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="file" accept=".xlsx" name="xlsxFile" id="xlsxFile" required>
+            <input type="submit" value="Upload">
+        </form>
+
+        {% if uploaded_file %}
+        <h2>Uploaded File:</h2>
+        <table>
+            <thead>
+                <tr>
+                    {% for header in headers %}
+                    <th>{{ header }}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in rows %}
+                <tr>
+                    {% for cell in row %}
+                    <td>{{ cell }}</td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+
+
+    </div>
+
+
+    <button id="toggle-upload">Upload Excel File</button>
+
+
+    <form method="post" action="{% url 'map' %}">
+        {% csrf_token %}
+        <div class="button-container">
+            <button type="submit" class="refresh-button">Refresh Table</button>
+        </div>
+    </form>
+
+    <form method="post" action="{% url 'cleardata' %}">
+        {% csrf_token %}
+        <button type="submit" class="btn-clear">Clear Data</button>
+    </form>
+
+    <h3>Manual Geocoding</h3>
+    <div>
+        <label for="latitude">Latitude:</label>
+        <input type="text" id="latitude">
+        <label for="longitude">Longitude:</label>
+        <input type="text" id="longitude">
+        <label for="location-name">Location Name:</label>
+        <input type="text" id="location-name">
+        <button onclick="addUserLocation()">Add Location</button>
+    </div>
+
+    <div class="route-info">
+        <h3>Route Selection</h3>
+        <!-- Add an input field for Trip ID -->
+        <input type="number" id="trip-id" placeholder="Enter Trip ID">
+
+        <input type="text" id="centre-name" placeholder="Enter Centre Name">
+
+        <!-- Add a button to view trip details -->
+        <button onclick="viewDetails()">View Details</button>
+    </div>
+
+   
+
+
+    <div class="map-trip-data">
+
+        <form method="get" action="{% url 'filter_sort' %}">
+            <button type="submit" class="refresh-button">Filter and Sort</button>
+        </form>
+
+
+        <h3>Map Trip Data</h3>
+
+
+        <div id="map-url-with-params" data-map-url="{{ map_url_with_params }}"></div>
+
+        <!-- Your "Update Map" button -->
+        <div class="update-map-section">
+            <button id="update-map-button" class="btn-update-map" type="button" onclick="geocodeMap()">Update Map</button>
+        </div>
+
+
+        <select id="select-center-dropdown">
+            <option value="" selected>Select Center</option>
+            <!-- Populate this dropdown with center options from your database -->
+            <option value="569341">Center 1</option>
+            <option value="567890">Center 2</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <select id="select-trip-dropdown">
+            <option value="" selected>Select Trip</option>
+            <!-- Populate this dropdown with trip options from your database -->
+            <option value="1">Trip 1</option>
+            <option value="2">Trip 2</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <button id="populate-map-button">Populate Map</button>
+
+
+        <form method="get" action="">
+            <label for="filter-week-day">Filter by Week Day:</label>
+            <select name="filter-week-day" id="filter-week-day">
+                <option value="">All</option>
+                {% for day in unique_week_days %}
+                <option value="{{ day }}">{{ day }}</option>
+                {% endfor %}
+            </select>
+
+            <label for="filter-trip-id">Filter by Trip ID:</label>
+            <select name="filter-trip-id" id="filter-trip-id">
+                <option value="">All</option>
+                {% for trip_id in unique_trip_ids %}
+                <option value="{{ trip_id }}">{{ trip_id }}</option>
+                {% endfor %}
+            </select>
+
+            <label for="centre-filter">Centre:</label>
+            <select name="centre-filter" id="centre-filter">
+                <option value="">All</option>
+                {% for centre in unique_centres %}
+                <option value="{{ centre }}">{{ centre }}</option>
+                {% endfor %}
+            </select>
+
+            <label for="from-to-filter">To/From Centre:</label>
+            <select name="from-to-filter" id="from-to-filter">
+                <option value="">All</option>
+                {% for from_to in unique_from_to %}
+                <option value="{{ from_to }}">{{ from_to }}</option>
+                {% endfor %}
+            </select>
+
+            <label for="time-range-filter">Time Range:</label>
+            <select name="time-range-filter" id="time-range-filter">
+                <option value="">All</option>
+                {% for time_range in unique_time_ranges %}
+                <option value="{{ time_range }}">{{ time_range }}</option>
+                {% endfor %}
+            </select>
+
+
+
+
+            <input type="submit" class="refresh-button" value="Apply Filter & Sort">
+            <button class="btn-clear" onclick="clearFilters()">Clear Filters</button>
+
+            <label for="sort-by">Sort by:</label>
+            <select name="sort-by" id="sort-by">
+                <option value="centre_n">Centre Name</option>
+                <option value="to_from_centre_i">To/From Centre</option>
+                <option value="week_day">Week Day</option>
+                <option value="time_range">Time Range</option>
+                <option value="Trip_ID">Trip ID</option>
+                <option value="Trip_Start_Time">Trip Start Time</option>
+                <option value="Trip_End_Time">Trip End Time</option>
+                <option value="vehicle_plate">Vehicle Plate</option>
+                <option value="duration_min">Duration (min)</option>
+                <option value="svc_type">Service Type</option>
+                <option value="nric_fin">NRIC/FIN</option>
+                <option value="name_surname">Name Surname</option>
+                <option value="trans_cap_sub_type_n">Transport Capacity Subtype</option>
+                <option value="client_seq_n">Client Sequence Number</option>
+                <option value="client_postal_code">Client Postal Code</option>
+                <option value="centr_postal_code">Centre Postal Code</option>
+                <option value="gender">Gender</option>
+                <option value="Loading_Time">Loading Time</option>
+                <option value="FromToPostal">FromToPostal</option>
+                <option value="distance_km">Distance (km)</option>
+                <option value="min_n">Min N</option>
+                <option value="min___Svc_time_">Min (+ Svc Time)</option>
+                <option value="Caregiver">Caregiver</option>
+                <option value="Pick_up_Time_Format">Pick up Time Format</option>
+                <option value="Pick_up_Time_Delivery">Pick up Time/Delivery</option>
+                <option value="IH_OS">IH/OS</option>
+                <option value="Cluster">Cluster</option>
+                <!-- Add more options for other fields -->
+            </select>
+
+
+
+            <input type="submit" class="refresh-button" value="Apply Sort">
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Centre Name</th>
+                    <th>To/From Centre</th>
+                    <th>Week Day</th>
+                    <th>Time Range</th>
+                    <th>Trip Start Time</th>
+                    <th>Trip End Time</th>
+                    <th>Vehicle Plate</th>
+                    <th>Duration (min)</th>
+                    <th>Service Type</th>
+                    <th>NRIC/FIN</th>
+                    <th>Name Surname</th>
+                    <th>Transport Capacity Subtype</th>
+                    <th>Client Sequence Number</th>
+                    <th>Client Postal Code</th>
+                    <th>Centre Postal Code</th>
+                    <th>Gender</th>
+                    <th>Trip ID</th>
+                    <th>Loading Time</th>
+                    <th>FromToPostal</th>
+                    <th>Distance (km)</th>
+                    <th>Min N</th>
+                    <th>Min (+ Svc Time)</th>
+                    <th>Caregiver</th>
+                    <th>Pick up Time Format</th>
+                    <th>Pick up Time/Delivery</th>
+                    <th>IH/OS</th>
+                    <th>Cluster</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                {% if filtered_data %}
+                {% for item in filtered_data %}
+                <tr>
+                    <td>{{ item.centre_n }}</td>
+                    <td>{{ item.to_from_centre_i }}</td>
+                    <td>{{ item.week_day }}</td>
+                    <td>{{ item.time_range }}</td>
+                    <td>{{ item.Trip_Start_Time }}</td>
+                    <td>{{ item.Trip_End_Time }}</td>
+                    <td>{{ item.vehicle_plate }}</td>
+                    <td>{{ item.duration_min }}</td>
+                    <td>{{ item.svc_type }}</td>
+                    <td>{{ item.nric_fin }}</td>
+                    <td>{{ item.name_surname }}</td>
+                    <td>{{ item.trans_cap_sub_type_n }}</td>
+                    <td>{{ item.client_seq_n }}</td>
+                    <td>{{ item.client_postal_code }}</td>
+                    <td>{{ item.centr_postal_code }}</td>
+                    <td>{{ item.gender }}</td>
+                    <td>{{ item.Trip_ID }}</td>
+                    <td>{{ item.Loading_Time }}</td>
+                    <td>{{ item.FromToPostal }}</td>
+                    <td>{{ item.distance_km }}</td>
+                    <td>{{ item.min_n }}</td>
+                    <td>{{ item.min___Svc_time_ }}</td>
+                    <td>{{ item.Caregiver }}</td>
+                    <td>{{ item.Pick_up_Time_Format }}</td>
+                    <td>{{ item.Pick_up_Time_Delivery }}</td>
+                    <td>{{ item.IH_OS }}</td>
+                    <td>{{ item.Cluster }}</td>
+                </tr>
+                {% endfor %}
+                {% else %}
+                {% for item in data %}
+                <tr>
+                    <td>{{ item.centre_n }}</td>
+                    <td>{{ item.to_from_centre_i }}</td>
+                    <td>{{ item.week_day }}</td>
+                    <td>{{ item.time_range }}</td>
+                    <td>{{ item.Trip_Start_Time }}</td>
+                    <td>{{ item.Trip_End_Time }}</td>
+                    <td>{{ item.vehicle_plate }}</td>
+                    <td>{{ item.duration_min }}</td>
+                    <td>{{ item.svc_type }}</td>
+                    <td>{{ item.nric_fin }}</td>
+                    <td>{{ item.name_surname }}</td>
+                    <td>{{ item.trans_cap_sub_type_n }}</td>
+                    <td>{{ item.client_seq_n }}</td>
+                    <td>{{ item.client_postal_code }}</td>
+                    <td>{{ item.centr_postal_code }}</td>
+                    <td>{{ item.gender }}</td>
+                    <td>{{ item.Trip_ID }}</td>
+                    <td>{{ item.Loading_Time }}</td>
+                    <td>{{ item.FromToPostal }}</td>
+                    <td>{{ item.distance_km }}</td>
+                    <td>{{ item.min_n }}</td>
+                    <td>{{ item.min___Svc_time_ }}</td>
+                    <td>{{ item.Caregiver }}</td>
+                    <td>{{ item.Pick_up_Time_Format }}</td>
+                    <td>{{ item.Pick_up_Time_Delivery }}</td>
+                    <td>{{ item.IH_OS }}</td>
+                    <td>{{ item.Cluster }}</td>
+                </tr>
+                {% endfor %}
+                {% endif %}
+            </tbody>
+
+        </table>
+
+
+    </div>
+
+
+
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.1/dist/leaflet-routing-machine.js"></script>
+    <script>
+
+
+        var map = L.map('map').setView([1.375, 103.885], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+
+        //var marker1 = L.marker([1.3784086214151257, 103.88796162259152]).addTo(map);
+        // var marker2 = L.marker([1.3713296283163807, 103.89000546584111]).addTo(map);
+        // var marker3 = L.marker([1.3754670878528414, 103.88283860340685]).addTo(map);
+
+        // marker1.bindPopup("First Location");
+        // marker2.bindPopup("Second Location");
+        // marker3.bindPopup("Third Location");
+
+        var locations = [
+            [1.3784086214151257, 103.88796162259152, 'Location 1'],
+            [1.3713296283163807, 103.89000546584111, 'Location 2'],
+            [1.3754670878528414, 103.88283860340685, 'Location 3'],
+            // Add more locations here
+        ];
+
+        for (var i = 0; i < locations.length; i++) {
+            var marker = L.marker([locations[i][0], locations[i][1]]).addTo(map);
+            marker.bindPopup(locations[i][2]);
+            marker.bindTooltip(locations[i][2], { permanent: true });
+        }
+
+        var waypoints = locations.map(function (location) {
+            return L.latLng(location[0], location[1]);
+        });
+
+
+        var routingControl = L.Routing.control({
+            waypoints: waypoints,
+            routeWhileDragging: true,
+            show: false,
+            createMarker: function (i, waypoint, n) {
+                return L.marker(waypoint.latLng, {
+                    draggable: true,
+                    icon: L.icon({
+                        iconUrl: '/static/images/marker-icon.png',
+                        iconSize: [25, 41],
+                        iconAnchor: [12, 41],
+                        popupAnchor: [1, -34],
+                        shadowSize: [41, 41]
+                    }),
+                    riseOnHover: true
+                });
+            }
+        }).addTo(map);
+
+        routingControl.on('routesfound', function (e) {
+            var routes = e.routes;
+            var totalDistance = routes[0].summary.totalDistance / 1000;
+            var totalTime = routes[0].summary.totalTime / 60;
+
+            var totalDistanceElem = document.getElementById('total-distance');
+            var totalTimeElem = document.getElementById('total-time');
+
+            totalDistanceElem.innerHTML = 'Total Distance: ' + totalDistance.toFixed(2) + ' km';
+            totalTimeElem.innerHTML = 'Total Time: ' + totalTime.toFixed(2) + ' min';
+        });
+
+
+        function geocode() {
+            var postalCode = document.getElementById('postal-code').value;
+
+            fetch(`https://developers.onemap.sg/commonapi/search?searchVal=${postalCode}&returnGeom=Y&getAddrDetails=Y&pageNum=1`)
+                .then(response => response.json())
+                .then(data => {
+                    var geocodingResult = document.getElementById('geocoding-result');
+                    if (data.results.length > 0) {
+                        var latitude = data.results[0].LATITUDE;
+                        var longitude = data.results[0].LONGITUDE;
+
+                        geocodingResult.innerHTML = `Latitude: ${latitude}, Longitude: ${longitude}`;
+                    } else {
+                        geocodingResult.innerHTML = 'No results found';
+                    }
+                })
+                .catch(error => {
+                    console.error('An error occurred:', error);
+                });
+
+
+        }
+        var markers = [];
+
+        function addMarker(latitude, longitude, locationName) {
+            var marker = L.marker([latitude, longitude]).addTo(map);
+            marker.bindPopup(locationName);
+            marker.bindTooltip(locationName, { permanent: true });
+            markers.push(marker); // Store the marker in the markers array
+        }
+
+        // Update the automateProcess function to use geocodeOneMap
+        async function automateProcess(tripData) {
+            tripData.forEach(async (trip) => {
+                var locations = [];
+
+                // Add Centre Location
+                var centreCoords = await geocodeOneMap(trip.centre_postal_code);
+                if (centreCoords) {
+                    locations.push([centreCoords.latitude, centreCoords.longitude, 'Centre']);
+                } else {
+                    console.error('Error geocoding centre coordinates');
+                }
+
+                // Add Client Locations
+                trip.clients.forEach(async (client, index) => {
+                    var clientCoords = await geocodeOneMap(client.client_postal_code);
+                    if (clientCoords) {
+                        locations.push([clientCoords.latitude, clientCoords.longitude, `Client ${index + 1}`]);
+                    } else {
+                        console.error(`Error geocoding client ${index + 1} coordinates`);
+                    }
+
+                    // If this is the last client, add routing
+                    if (index === trip.clients.length - 1) {
+                        var waypoints = locations.map(function (location) {
+                            return L.latLng(location[0], location[1]);
+                        });
+
+                        // Add markers to map
+                        locations.forEach(location => {
+                            var marker = L.marker([location[0], location[1]]).addTo(map);
+                            marker.bindPopup(location[2]);
+                            marker.bindTooltip(location[2], { permanent: true });
+                        });
+
+                        addRoutingControl(waypoints);
+                    }
+                });
+            });
+        }
+
+        // Call the function with the filtered data
+        automateProcess(mapTripData);
+
+
+        var userLocations = [];  // Array to store user-added locations
+
+        function addUserLocation() {
+            // Get user input (latitude, longitude, location name) and add to userLocations array
+            var latitude = parseFloat(document.getElementById('latitude').value);
+            var longitude = parseFloat(document.getElementById('longitude').value);
+            var locationName = document.getElementById('location-name').value;
+
+            userLocations.push([latitude, longitude, locationName]);
+
+            // Add marker to map
+            var marker = L.marker([latitude, longitude]).addTo(map);
+            marker.bindPopup(locationName);
+            marker.bindTooltip(locationName, { permanent: true });
+
+            // Update the waypoints for routing
+            waypoints = userLocations.map(function (location) {
+                return L.latLng(location[0], location[1]);
+            });
+
+            // Update routing control
+            routingControl.setWaypoints(waypoints);
+        }
+
+        function updateSummary() {
+            // Calculate and display summary information based on userLocations array
+            // ...
+        }
+
+
+
+        // Function to toggle the visibility of the upload section
+        function toggleUploadSection() {
+            var uploadSection = document.getElementById('upload-section');
+            uploadSection.hidden = !uploadSection.hidden;
+        }
+
+        // Attach the toggle function to the button click event
+        var toggleButton = document.getElementById('toggle-upload');
+        toggleButton.addEventListener('click', toggleUploadSection);
+
+        $(document).ready(function () {
+            $('#toggle-upload').click(function () {
+                $('#upload-section').toggle();
+            });
+
+            $('#upload-section form').submit(function (event) {
+                event.preventDefault();
+
+                var formData = new FormData(this);
+
+                $.ajax({
+                    type: 'POST',
+                    url: 'uploadmapdata/',  // Update this URL to match your view URL
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (response) {
+                        // Handle the response, e.g., display uploaded data
+                        $('#uploaded-data').html(response);
+                    },
+                    error: function (error) {
+                        console.error('An error occurred:', error);
+                    }
+                });
+            });
+        });
+
+
+
+        document.getElementById('update-map-button').addEventListener('click', function () {
+            alert('Button clicked');
+            geocodeMap(); // Call the geocode function to update the map
+        });
+
+        function viewDetails() {
+            var tripID = document.getElementById('trip-id').value;
+
+            if (tripID) {
+                var url = '/trip_detail/' + tripID + '/';
+                window.location.href = url;
+            } else {
+                alert('Please enter a Trip ID');
+            }
+        }
+
+
+    </script>
+
+
+</body>
+</html>
+

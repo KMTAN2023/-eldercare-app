@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import elder,vehicle,centre
+from .models import elder,vehicle,centre,MapTripData
 # from import_export.admin import ImportExportModelAdmin
 
 
@@ -11,4 +11,4 @@ from .models import elder,vehicle,centre
 admin.site.register(elder)
 admin.site.register(vehicle)
 admin.site.register(centre)
-
+admin.site.register(MapTripData)

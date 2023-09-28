@@ -1,0 +1,332 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Leaflet Map in Django</title>
+
+    <!-- Include necessary CSS and JavaScript files for Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <!-- Include Leaflet Routing Machine CSS and JavaScript -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.1/dist/leaflet-routing-machine.css" />
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.1/dist/leaflet-routing-machine.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+
+        #map {
+            width: 100%;
+            height: 80vh;
+        }
+
+        /* Increase specificity for table styles */
+        #table-container table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        #table-container th, #table-container td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        #table-container th {
+            background-color: #f0f0f0;
+        }
+
+            #table-container th:first-child, #table-container td:first-child {
+                border-left: none;
+            }
+
+            #table-container th:last-child, #table-container td:last-child {
+                border-right: none;
+            }
+
+        #table-container tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        #latitude, #longitude {
+            font-weight: bold;
+        }
+
+        .route-info {
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 10px;
+        }
+
+            .route-info h3 {
+                margin-top: 0;
+            }
+
+            .route-info div {
+                margin-top: 5px;
+            }
+    </style>
+</head>
+
+<body>
+    <div id="map" style="height: 500px;"></div>
+    <div>
+        <input type="text" id="postal-code" placeholder="Enter Postal Code">
+        <button onclick="geocode()">Geocode</button>
+        <div id="geocoding-result"></div>
+    </div>
+
+    <h1>Trip Details</h1>
+    <p>Trip ID: {{ trip_data.Trip_ID }}</p>
+
+    <p>Centre Name: {{ trip_data.centre_n }}</p>
+    <p>Client Name: {{ trip_data.name_surname }}</p>
+    <p>Client Postal Code: {{ trip_data.client_postal_code }}</p>
+
+    <p>Client Name: {{ client.name }}</p>
+    <p>Client Postal Code: {{ client.postalCode }}</p>
+    <!-- Add more details about the trip as needed -->
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.1/dist/leaflet-routing-machine.js"></script>
+
+    <script>
+        function geocodeCentre(postalCode, id) {
+            fetch(`https://developers.onemap.sg/commonapi/search?searchVal=${postalCode}&returnGeom=Y&getAddrDetails=Y&pageNum=1`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.results.length > 0) {
+                        var latitude = data.results[0].LATITUDE;
+                        var longitude = data.results[0].LONGITUDE;
+
+                        // Update the table with latitude and longitude
+                        document.getElementById(`latitude_${id}`).innerText = latitude;
+                        document.getElementById(`longitude_${id}`).innerText = longitude;
+
+                        // Add the marker to the map
+                        L.marker([latitude, longitude])
+                            .addTo(markers)
+                            .bindPopup(id)
+                            .bindTooltip(id, { permanent: true });
+
+                        // Add the waypoint to the array
+                        waypoints.push(L.latLng(latitude, longitude));
+
+                        // Update the routing control with the new waypoints
+                        routingControl.setWaypoints(waypoints);
+
+                    }
+                })
+                .catch(error => {
+                    console.error(`Error geocoding for ${id}:`, error);
+                });
+        }
+
+        // Call the function with the centre's postal code and id
+        geocodeCentre('{{ trip_data.centr_postal_code }}', 'Centre');
+    </script>
+
+    <table>
+        <tr>
+            <th>Client Sequence Number</th>
+            <th>Client Name</th>
+            <th>Client Postal Code</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+        </tr>
+
+        <!-- Add first row -->
+        <tr>
+            <td>Start</td>
+            <td>Centre</td>
+            <td>{{ trip_data.centr_postal_code }}</td>
+            <td id="latitude_Centre"></td>
+            <td id="longitude_Centre"></td>
+        </tr>
+
+        {% for client_instance in client_data %}
+        <tr>
+            <td>{{ client_instance.client_seq_n }}</td>
+            <td>{{ client_instance.name_surname }}</td>
+            <td>{{ client_instance.client_postal_code }}</td>
+            <td id="latitude_{{ client_instance.client_seq_n }}"></td>
+            <td id="longitude_{{ client_instance.client_seq_n }}"></td>
+        </tr>
+
+
+
+        <script>
+        var clientSeq = {{ client_instance.client_seq_n }};
+        var postalCode = "{{ client_instance.client_postal_code }}";
+
+        function geocodeClient(clientSeq, postalCode) {
+            fetch(`https://developers.onemap.sg/commonapi/search?searchVal=${postalCode}&returnGeom=Y&getAddrDetails=Y&pageNum=1`)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.results.length > 0) {
+                        var latitude = data.results[0].LATITUDE;
+                        var longitude = data.results[0].LONGITUDE;
+
+                        // Update the table with latitude and longitude
+                        document.getElementById(`latitude_${clientSeq}`).innerText = latitude;
+                        document.getElementById(`longitude_${clientSeq}`).innerText = longitude;
+
+                        // Add the marker to the map
+                        L.marker([latitude, longitude])
+                            .addTo(markers)
+                            .bindPopup(`Client ${clientSeq}`)
+                            .bindTooltip(`Client ${clientSeq}`, { permanent: true });
+
+                        // Add the waypoint to the array
+                        waypoints.push(L.latLng(latitude, longitude));
+
+                        // Update the routing control with the new waypoints
+                        routingControl.setWaypoints(waypoints);
+
+                    }
+                })
+                .catch(error => {
+                    console.error(`Error geocoding for client ${clientSeq}:`, error);
+                });
+        }
+
+        geocodeClient(clientSeq, postalCode);
+
+
+    </script>
+    {% endfor %}
+
+    <!-- Add last row -->
+    <tr>
+        <td>Last</td>
+        <td>Centre</td>
+        <td>{{ trip_data.centr_postal_code }}</td>
+        <td id="latitude_Last"></td>
+        <td id="longitude_Last"></td>
+    </tr>
+    </table>
+
+    <!-- Add a section to display waypoints -->
+    <div>
+        <h2>Waypoints</h2>
+        <div id="waypoints"></div>
+        <h3>Route Information</h3>
+        <div id="total-distance"></div>
+        <div id="total-time"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.1/dist/leaflet-routing-machine.js"></script>
+
+    <script>
+
+    // Initialize Leaflet map
+    // ...
+    // Define an array of clients and their postal codes
+
+
+
+    var map = L.map('map').setView([1.375, 103.885], 13);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+    }).addTo(map);
+
+         var markers = L.layerGroup();
+
+        // Create an empty array to store waypoints
+        var waypoints = [];
+
+
+
+
+
+            // Call the function with the centre's postal code and id
+             geocodeCentre('{{ trip_data.centr_postal_code }}', 'Last');
+
+
+            // Function to geocode a location and add a marker to the map
+            function geocodeAndAddMarker(postalCode, id, markers) {
+                fetch(`https://developers.onemap.sg/commonapi/search?searchVal=${postalCode}&returnGeom=Y&getAddrDetails=Y&pageNum=1`)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.results.length > 0) {
+                            var latitude = data.results[0].LATITUDE;
+                            var longitude = data.results[0].LONGITUDE;
+
+                            // Add the marker to the map
+                            L.marker([latitude, longitude])
+                                .addTo(markers)
+                                .bindPopup(id)
+                                .bindTooltip(id, { permanent: true });
+
+                            // Add the waypoint to the array
+                            waypoints.push(L.latLng(latitude, longitude));
+
+                            // Update the routing control with the new waypoints
+                            routingControl.setWaypoints(waypoints);
+                        }
+                    })
+                    .catch(error => {
+                        console.error(`Error geocoding for ${id}:`, error);
+                    });
+            }
+
+// Call geocodeClient for each client
+{% for client in clients_data %}
+           // geocodeAndAddMarker({{ client.client_seq_n }}, "{{ client.client_postal_code }}",markers);
+{% endfor %}
+
+
+// Add the layer group to the map
+        map.addLayer(markers);
+
+        // After adding waypoints to the array, update the waypoints section
+        document.getElementById('waypoints').innerHTML = JSON.stringify(waypoints, null, 2);
+
+
+        // Create routing control with empty waypoints
+        var routingControl = L.Routing.control({
+            waypoints: waypoints,
+            routeWhileDragging: true,
+            show: false,
+            createMarker: function (i, waypoint, n) {
+                return L.marker(waypoint.latLng, {
+                    draggable: true,
+                    icon: L.icon({
+                        iconUrl: '/static/images/marker-icon.png',
+                        iconSize: [25, 41],
+                        iconAnchor: [12, 41],
+                        popupAnchor: [1, -34],
+                        shadowSize: [41, 41]
+                    }),
+                    riseOnHover: true
+                });
+            }
+        }).addTo(map);
+
+        routingControl.on('routesfound', function (e) {
+            var routes = e.routes;
+            var totalDistance = routes[0].summary.totalDistance / 1000;
+            var totalTime = routes[0].summary.totalTime / 60;
+
+            var totalDistanceElem = document.getElementById('total-distance');
+            var totalTimeElem = document.getElementById('total-time');
+
+            totalDistanceElem.innerHTML = 'Total Distance: ' + totalDistance.toFixed(2) + ' km';
+            totalTimeElem.innerHTML = 'Total Time: ' + totalTime.toFixed(2) + ' min';
+        });
+
+
+            // Calculate the route
+            routingControl.calculateRoute();
+
+            // Add the route to the map
+            map.addLayer(routingControl.getRoute());
+
+    </script>
+
+
+</body>
+</html>
