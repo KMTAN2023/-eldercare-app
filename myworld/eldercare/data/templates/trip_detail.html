@@ -18,6 +18,22 @@
             height: 80vh;
         }
 
+        .route-info {
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 10px;
+        }
+
+        .route-info h3 {
+                margin-top: 0;
+            }
+
+        .route-info div {
+                margin-top: 5px;
+            }
+
         /* Increase specificity for table styles */
         #table-container table {
             width: 100%;
@@ -51,26 +67,14 @@
             font-weight: bold;
         }
 
-        .route-info {
-            background-color: white;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-top: 10px;
-        }
-
-            .route-info h3 {
-                margin-top: 0;
-            }
-
-            .route-info div {
-                margin-top: 5px;
-            }
+        
     </style>
 </head>
 
 <body>
     <div id="map" style="height: 500px;"></div>
+
+
     <div>
         <input type="text" id="postal-code" placeholder="Enter Postal Code">
         <button onclick="geocode()">Geocode</button>
@@ -194,17 +198,17 @@
         geocodeClient(clientSeq, postalCode);
 
 
-    </script>
-    {% endfor %}
+        </script>
+        {% endfor %}
 
-    <!-- Add last row -->
-    <tr>
-        <td>Last</td>
-        <td>Centre</td>
-        <td>{{ trip_data.centr_postal_code }}</td>
-        <td id="latitude_Last"></td>
-        <td id="longitude_Last"></td>
-    </tr>
+        <!-- Add last row -->
+        <tr>
+            <td>Last</td>
+            <td>Centre</td>
+            <td>{{ trip_data.centr_postal_code }}</td>
+            <td id="latitude_Last"></td>
+            <td id="longitude_Last"></td>
+        </tr>
     </table>
 
     <!-- Add a section to display waypoints -->
@@ -216,6 +220,7 @@
         <div id="total-time"></div>
     </div>
 
+   
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <script src="https://unpkg.com/leaflet-routing-machine@3.2.1/dist/leaflet-routing-machine.js"></script>
 
@@ -316,6 +321,9 @@
 
             totalDistanceElem.innerHTML = 'Total Distance: ' + totalDistance.toFixed(2) + ' km';
             totalTimeElem.innerHTML = 'Total Time: ' + totalTime.toFixed(2) + ' min';
+
+          
+
         });
 
 
